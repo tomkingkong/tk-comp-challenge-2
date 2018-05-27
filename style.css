@@ -1,0 +1,351 @@
+/* Global elements */
+
+body {
+  background-color: #EFEFEF;
+  font-family: 'Open Sans', sans-serif;
+}
+.wrapper {
+  width: 100vw;
+}
+
+hr {
+  width: 70%;
+}
+
+/* Header */
+
+.page-header {
+  background-color: #2B2B2B;
+  display: flex;
+  flex-flow: row wrap;
+  height: auto;
+  justify-content: center;
+  width: 100vw;
+}
+
+/*  Username */
+
+.username {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.8em 1.5em 1.8em 0;
+  width: 100%;
+}
+
+.username button {
+  background-color: transparent;
+  border: 0.0937em solid #EFEFEF;
+  box-sizing: content-box;
+  border-radius: 50%;
+  padding: 0.3em;
+  height: 1em;
+  width: 1em;
+}
+
+.username p {
+  color: #55B4F8;
+  text-align: right;
+  margin: 0 0.4em;
+}
+
+.fa-caret-down {
+  color: #55B4F8;
+}
+
+/* Shares / Playlists / Personal  */
+
+.header-nav {
+  cursor: pointer;
+  display: flex;
+  height: 1em;
+  padding: 0 0 3em 1.5em;
+}
+
+.header-nav p {
+  color: #808080;
+  margin: 0 2em 0 0.5em;
+}
+
+.header-nav p:first-of-type {
+  color: #DEDEDE;
+}
+
+/* 2Win! Logo */
+
+.logo {
+  align-items: center;
+  color: #EFEFEF;
+  display: flex;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  font-size: 3em;
+  margin: 0;
+  padding: 0 0.5em 0.53em 0;
+}
+
+/* Shares Section Header */
+
+.shares {
+  color: #4D4D4D;
+  font-size: 2em;
+  margin: 0.8em 0.5em;
+  text-align: center;
+}
+
+/* Section of Profile Cards */
+
+section {
+  background-color: #EFEFEF;
+  display: flex;
+  flex-flow: row wrap;
+  padding-bottom: 0.6em;
+  transition: all .15s linear;
+  width: 100%;
+}
+
+section .section-show-more {
+  align-items: center;
+  background-color: #EFEFEF;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  filter: opacity(30%);
+  flex-direction: row;
+  padding: 1em;
+  justify-content: center;
+  stroke: #000;
+  text-align: center;
+  width: 100%;
+}
+
+.section-show-more:hover {
+  filter: opacity(100%);
+}
+
+/* Profile Card */
+
+article {
+  background-color: #fff;
+  box-shadow: 0px 2px 8px #888888;
+  flex: 1;
+  height: auto;
+  margin: 0.04em 0;
+  min-width: 100%;
+  position: relative;
+  width: 100%;
+}
+
+/* Card Header / background container */
+
+article header {
+  display: flex;
+  background-color: pink;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 1.5em;
+  padding-bottom: 5em;
+  width: 100%;
+}
+
+/* Card Header Share Button */
+
+article .share-button {
+  background: url() no-repeat;
+  background-color: white;
+  border-radius: 50%;
+  color: #4D4D4D;
+  cursor: pointer;
+  width: 3em;
+  height: 3em;
+}
+
+/* Card Header Views Count */
+
+article aside {
+  color: #EFEFEF;
+}
+
+aside h3 {
+  color: inherit;
+  font-size: 2em;
+}
+
+/* Card Main body */
+
+main {
+  display: none;
+  color: #4D4D4D;
+  font-size: 0.8em;
+  padding: 1.5em;
+  height: auto;
+  word-wrap: break-word;
+}
+
+/* Card Content Name */
+
+h4 {
+  font-size: 1.3em;
+}
+
+/* Card Content Date */
+
+.date {
+  color: #808080;
+  margin: 0.4em 0;
+}
+
+/* Card Content Url */
+
+.url {
+  background-color: #EFEFEF;
+  padding: 0.4em 2.3em 1em 0.6em;
+  margin: 0.8em 0;
+}
+
+.url a {
+  text-decoration: none;
+}
+
+.url a:visited {
+  color: #4D4D4D;
+  text-decoration: none;
+}
+
+/* Card Content Playlist */
+
+.playlist {
+  margin-bottom: 1em;
+}
+
+/* Card Content Attachments */
+
+.attachments {
+  color: #55B4F8;
+  font-size: 2.5em;
+  padding: 0 0 0.4em 0;
+}
+
+/* Card Footer Show More Button */
+
+article .show-more {
+  align-items: center;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  justify-content: center;
+  padding-top: 8em;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+article .show-more:hover {
+  filter: opacity(100%);
+}
+
+.show-more:active +main {
+  display: block;
+}
+
+/* Hide For < 1216px */
+
+.profile-8,
+.profile-7 {
+   display: none;
+ }
+
+/* Hide For < 918px */
+.profile-8,
+.profile-7,
+.profile-6,
+.profile-5  {
+   display: none;
+ }
+
+
+@media only screen and (min-width: 420px) {
+    article {
+      cursor: initial;
+      flex: 1;
+      margin: 0.5em 0.4em;
+      min-width: 18em;
+      width: 18em;
+    }
+
+    main {
+      display: block;
+    }
+
+    article .show-more {
+      display: none;
+    }
+    
+    .shares {
+      text-align: left;
+    }
+  }
+
+@media only screen and (min-width: 650px){
+  .page-header {
+    align-items: flex-end;
+    background-color: #2B2B2B;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    height: auto;
+    width: 100vw;
+  }
+
+  .username {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.8em 1.5em 1.8em 0;
+    width: 100%;
+  }
+
+  .header-nav {
+    cursor: pointer;
+    display: flex;
+    height: 1em;
+    padding: 0 0 3em 1.5em;
+  }
+
+  .header-nav p {
+    color: #808080;
+    margin: 0 2em 0 0.5em;
+  }
+
+  .logo {
+    align-items: center;
+    color: #EFEFEF;
+    display: flex;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 3em;
+    margin: 0;
+    padding: 0 0.5em 0.53em 0;
+  }
+}
+
+@media only screen and (min-width: 891px){
+  .profile-6,
+  .profile-5 {
+    display: block;
+  }
+ }
+
+@media only screen and (min-width: 1191px){
+ .profile-8,
+ .profile-7 {
+   display: block;
+ }
+}
