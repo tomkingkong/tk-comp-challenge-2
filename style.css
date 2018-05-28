@@ -1,15 +1,17 @@
 /* Global elements */
 
 body {
-  background-color: #EFEFEF;
+  background: #EFEFEF url(images/soft-wallpaper.png) 0 0 repeat;
   font-family: 'Open Sans', sans-serif;
 }
+
 .wrapper {
+  background-color: #2B2B2B;
   width: 100vw;
 }
 
 hr {
-  width: 70%;
+  width: 45%;
 }
 
 /* Header */
@@ -17,10 +19,10 @@ hr {
 .page-header {
   background-color: #2B2B2B;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column;
   height: auto;
-  justify-content: center;
   width: 100vw;
+  transition: all 0.15s linear;
 }
 
 /*  Username */
@@ -29,8 +31,9 @@ hr {
   align-items: center;
   cursor: pointer;
   display: flex;
-  justify-content: flex-end;
-  padding: 0.8em 1.5em 1.8em 0;
+  justify-content: center;
+  margin: 1em 1em 0 0;
+  order: 0;
   width: 100%;
 }
 
@@ -46,12 +49,17 @@ hr {
 
 .username p {
   color: #55B4F8;
-  text-align: right;
   margin: 0 0.4em;
+  text-align: right;
+  text-shadow: 2px 2px 4px #000;
 }
 
-.fa-caret-down {
-  color: #55B4F8;
+.username p:hover {
+  color: #EFEFEF;
+}
+
+.username p:hover+svg path {
+  fill: #EFEFEF;
 }
 
 /* Shares / Playlists / Personal  */
@@ -59,20 +67,37 @@ hr {
 .header-nav {
   cursor: pointer;
   display: flex;
-  height: 1em;
-  padding: 0 0 3em 1.5em;
+  height: auto;
+  justify-content: space-around;
+  margin: 1em 0;
+  order: 5;
+  padding: 0 0.3em;
+  width: 100%;
+  transition: all 0.15s linear;
 }
 
 .header-nav p {
   color: #808080;
+  display: none;
   margin: 0 2em 0 0.5em;
+  text-shadow: 2px 2px 4px #000;
+  transition: all 0.15s linear;
 }
 
-.header-nav p:first-of-type {
-  color: #DEDEDE;
+.header-nav p:hover {
+  color: #EFEFEF;
 }
 
-/* 2Win! Logo */
+.header-nav svg {
+  width: 10%;
+  height: 10%;
+}
+
+.header-nav p:last-of-type {
+  margin-right: 0;
+}
+
+/* MAGIC Logo */
 
 .logo {
   align-items: center;
@@ -81,25 +106,32 @@ hr {
   font-family: 'Roboto Slab', serif;
   font-weight: 400;
   font-size: 3em;
-  margin: 0;
-  padding: 0 0.5em 0.53em 0;
+  justify-content: flex-start;
+  margin: 0.3em auto 0.05em auto;
+  order: 0;
+  transition: all 0.15s linear;
 }
 
-/* Shares Section Header */
+.logo img {
+  width: 4.6em;
+  padding: 0;
+}
 
-.shares {
+/* Collectibles Section Header */
+
+.collectibles {
   color: #4D4D4D;
   font-size: 2em;
-  margin: 0.8em 0.5em;
+  padding: 0.8em 0.5em;
   text-align: center;
 }
 
 /* Section of Profile Cards */
 
 section {
-  background-color: #EFEFEF;
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
   padding-bottom: 0.6em;
   transition: all .15s linear;
   width: 100%;
@@ -107,17 +139,27 @@ section {
 
 section .section-show-more {
   align-items: center;
-  background-color: #EFEFEF;
+  background-color: transparent;
   border: 0;
   cursor: pointer;
   display: flex;
-  filter: opacity(30%);
+  filter: opacity(50%);
   flex-direction: row;
   padding: 1em;
   justify-content: center;
-  stroke: #000;
+  fill: #2B2B2B;
+  stroke: #2b2b2b;
   text-align: center;
-  width: 100%;
+  width: 95vw;
+}
+
+.section-show-more div {
+  background-color: #EFEFEF;
+  border: 1px solid #2b2b2b;
+  border-radius: 50%;
+  padding-top: 0.3em;
+  height: 1.6em;
+  width: 1.6em;
 }
 
 .section-show-more:hover {
@@ -128,7 +170,7 @@ section .section-show-more {
 
 article {
   background-color: #fff;
-  box-shadow: 0px 2px 8px #888888;
+  box-shadow: 0px 0px 8px #fff;
   flex: 1;
   height: auto;
   margin: 0.04em 0;
@@ -141,24 +183,26 @@ article {
 
 article header {
   display: flex;
-  background-color: pink;
+  background-blend-mode: overlay;
   flex-flow: row wrap;
   justify-content: space-between;
-  padding: 1.5em;
-  padding-bottom: 5em;
+  padding: 1em 1em 5em 1em;
+  position: relative;
   width: 100%;
 }
 
 /* Card Header Share Button */
 
 article .share-button {
-  background: url() no-repeat;
-  background-color: white;
+  background: #fff url(images/soft-wallpaper.png) 0 0 repeat;
   border-radius: 50%;
   color: #4D4D4D;
   cursor: pointer;
   width: 3em;
   height: 3em;
+}
+article .share-button:hover {
+  background-color: lavender;
 }
 
 /* Card Header Views Count */
@@ -175,8 +219,9 @@ aside h3 {
 /* Card Main body */
 
 main {
-  display: none;
+  background: #EFEFEF url(images/light-paper-fibers.png) 0 0 repeat;
   color: #4D4D4D;
+  display: none;
   font-size: 0.8em;
   padding: 1.5em;
   height: auto;
@@ -199,7 +244,8 @@ h4 {
 /* Card Content Url */
 
 .url {
-  background-color: #EFEFEF;
+  background: #ddd url(images/light-paper-fibers.png) 0 0 repeat;
+  overflow: scroll;
   padding: 0.4em 2.3em 1em 0.6em;
   margin: 0.8em 0;
 }
@@ -233,6 +279,7 @@ article .show-more {
   align-items: center;
   background-color: transparent;
   border: 0;
+  color: white;
   cursor: pointer;
   display: flex;
   flex-direction: row;
@@ -246,53 +293,143 @@ article .show-more {
   z-index: 1;
 }
 
+.show-more svg {
+  stroke: white;
+  margin: 0 0.3em;
+}
+
+.show-more hr {
+  border-color: white;
+}
+
 article .show-more:hover {
   filter: opacity(100%);
 }
 
-.show-more:active +main {
+.show-more:active+main {
   display: block;
+}
+
+/* Background URLs for Cards */
+.profile-1 header {
+  background: #666 url(https://nerdist.com/wp-content/uploads/2015/12/ZendikarArt_FEAT.png) no-repeat center top/100%;
+}
+.profile-2 header {
+  background: #666 url(http://2.bp.blogspot.com/-iHnXQ8dOnEg/VT4HM0nvt3I/AAAAAAABY3Y/mbmAOXHzXh4/s1600/1%2B-%2BThe%2BForgemaster%2Bby%2BBrandon%2BMoore.jpg) no-repeat center top/100%;
+}
+.profile-3 header {
+  background: #666 url(http://s3.gatheringmagic.com/uploads/2015/04/15/ML_3.jpg) no-repeat center top/100%;
+}
+.profile-4 header {
+  background: #666 url(https://78.media.tumblr.com/8696531b07ec5b5fe8b58c3e4701cf4c/tumblr_ogrorv8MLU1sp8yqvo1_500.jpg) no-repeat center/100%;
+}
+.profile-5 header {
+  background: #666 url(https://nerdist.com/wp-content/uploads/2015/12/ZendikarArt_FEAT.png) no-repeat center/100%;
+}
+.profile-6 header {
+  background: #666 url(https://nerdist.com/wp-content/uploads/2015/12/ZendikarArt_FEAT.png) no-repeat center/100%;
+}
+.profile-7 header {
+  background: #666 url(https://nerdist.com/wp-content/uploads/2015/12/ZendikarArt_FEAT.png) no-repeat center/100%;
+}
+.profile-8 header {
+  background: #666 url(https://nerdist.com/wp-content/uploads/2015/12/ZendikarArt_FEAT.png) no-repeat center/100%;
+}
+.profile-9 header {
+  background: #666 url(https://nerdist.com/wp-content/uploads/2015/12/ZendikarArt_FEAT.png) no-repeat center/100%;
+}
+.profile-10 header {
+  background: #666 url(https://nerdist.com/wp-content/uploads/2015/12/ZendikarArt_FEAT.png) no-repeat center/100%;
+}
+.profile-11 header {
+  background: #666 url(https://nerdist.com/wp-content/uploads/2015/12/ZendikarArt_FEAT.png) no-repeat center/100%;
+}
+.profile-12 header {
+    background: #666 url(https://nerdist.com/wp-content/uploads/2015/12/ZendikarArt_FEAT.png) no-repeat center/100%;
+}
+article:hover header {
+  background-color: #888;
+}
+
+/* Hide For < 1805px */
+
+.profile-11,
+.profile-12 {
+  display: none;
+}
+
+/* Hide For < 1502px */
+
+.profile-9,
+.profile-10 {
+  display: none;
 }
 
 /* Hide For < 1216px */
 
 .profile-8,
 .profile-7 {
-   display: none;
- }
+  display: none;
+}
 
 /* Hide For < 918px */
+
 .profile-8,
 .profile-7,
 .profile-6,
-.profile-5  {
-   display: none;
- }
+.profile-5 {
+  display: none;
+}
 
+/* Hide For < 685px */
 
-@media only screen and (min-width: 420px) {
-    article {
-      cursor: initial;
-      flex: 1;
-      margin: 0.5em 0.4em;
-      min-width: 18em;
-      width: 18em;
-    }
+.profile-8,
+.profile-7,
+.profile-6,
+.profile-5 {
+  display: none;
+}
 
-    main {
-      display: block;
-    }
-
-    article .show-more {
-      display: none;
-    }
-    
-    .shares {
-      text-align: left;
-    }
+@media only screen and (min-width: 450px) {
+  article {
+    box-shadow: 0px 2px 8px #888888;
+    cursor: initial;
+    flex: 1;
+    margin: 0.5em 0.4em;
+    max-width: 25em;
+    min-width: 18em;
+    width: 18em;
   }
+  main {
+    display: block;
+  }
+  article .show-more {
+    display: none;
+  }
+  .header-nav {
+    justify-content: center;
+  }
+  .header-nav svg {
+    width: auto;
+    height: auto;
+  }
+  .header-nav p {
+    display: block;
+  }
+  .profile-4,
+  .profile-3 {
+    display: none;
+  }
+}
 
-@media only screen and (min-width: 650px){
+@media only screen and (min-width: 602px) {
+  .profile-4,
+  .profile-3 {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 685px) {
   .page-header {
     align-items: flex-end;
     background-color: #2B2B2B;
@@ -302,7 +439,6 @@ article .show-more:hover {
     height: auto;
     width: 100vw;
   }
-
   .username {
     align-items: center;
     cursor: pointer;
@@ -311,19 +447,14 @@ article .show-more:hover {
     padding: 0.8em 1.5em 1.8em 0;
     width: 100%;
   }
-
   .header-nav {
-    cursor: pointer;
-    display: flex;
     height: 1em;
-    padding: 0 0 3em 1.5em;
+    justify-content: left;
+    margin: 0 0 2em 1.5em;
+    order: 0;
+    padding: 0;
+    width: 60%;
   }
-
-  .header-nav p {
-    color: #808080;
-    margin: 0 2em 0 0.5em;
-  }
-
   .logo {
     align-items: center;
     color: #EFEFEF;
@@ -332,20 +463,40 @@ article .show-more:hover {
     font-weight: 400;
     font-size: 3em;
     margin: 0;
-    padding: 0 0.5em 0.53em 0;
+    padding: 0 0.5em 0.45em 0;
+  }
+  .collectibles {
+    text-align: left;
   }
 }
 
-@media only screen and (min-width: 891px){
+@media only screen and (min-width: 891px) {
+  .header-nav p {
+    margin: 0 5em 0 1em;
+  }
   .profile-6,
   .profile-5 {
     display: block;
   }
- }
+}
 
-@media only screen and (min-width: 1191px){
- .profile-8,
- .profile-7 {
-   display: block;
- }
+@media only screen and (min-width: 1191px) {
+  .profile-8,
+  .profile-7 {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1502px) {
+  .profile-9,
+  .profile-10 {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1805px) {
+  .profile-11,
+  .profile-12 {
+    display: block;
+  }
 }
