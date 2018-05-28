@@ -81,7 +81,7 @@ hr {
 }
 
 .header-nav p {
-  color: #808080;
+  color: lightgray;
   display: none;
   margin: 0 2em 0 0.5em;
   text-shadow: 2px 2px 4px #000;
@@ -89,7 +89,7 @@ hr {
 }
 
 .header-nav p:hover {
-  color: #EFEFEF;
+  color: #fff;
 }
 
 .header-nav svg {
@@ -257,7 +257,7 @@ h4 {
 
 .url {
   background: #ddd url(images/light-paper-fibers.png) 0 0 repeat;
-  overflow: scroll;
+  overflow-y: scroll;
   padding: 0.4em 2.3em 1em 0.6em;
   margin: 0.8em 0;
 }
