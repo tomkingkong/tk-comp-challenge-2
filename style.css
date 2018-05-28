@@ -16,8 +16,12 @@ hr {
 
 /* Header */
 
+.header-wrap {
+  background: rgb(28, 28, 28) url(images/soft-wallpaper.png) 0 0 repeat;
+}
+
 .page-header {
-  background-color: #2B2B2B;
+  background-color: transparent;
   display: flex;
   flex-flow: column;
   height: auto;
@@ -112,6 +116,12 @@ hr {
   transition: all 0.15s linear;
 }
 
+.logo a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
 .logo img {
   width: 4.6em;
   padding: 0;
@@ -132,6 +142,7 @@ section {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  padding: 0 0.8em;
   padding-bottom: 0.6em;
   transition: all .15s linear;
   width: 100%;
@@ -194,13 +205,14 @@ article header {
 /* Card Header Share Button */
 
 article .share-button {
-  background: #fff url(images/soft-wallpaper.png) 0 0 repeat;
+  background-color: #fff;
   border-radius: 50%;
   color: #4D4D4D;
   cursor: pointer;
   width: 3em;
   height: 3em;
 }
+
 article .share-button:hover {
   background-color: lavender;
 }
@@ -311,42 +323,55 @@ article .show-more:hover {
 }
 
 /* Background URLs for Cards */
+
 .profile-1 header {
   background: #666 url(https://nerdist.com/wp-content/uploads/2015/12/ZendikarArt_FEAT.png) no-repeat center top/100%;
 }
+
 .profile-2 header {
   background: #666 url(http://2.bp.blogspot.com/-iHnXQ8dOnEg/VT4HM0nvt3I/AAAAAAABY3Y/mbmAOXHzXh4/s1600/1%2B-%2BThe%2BForgemaster%2Bby%2BBrandon%2BMoore.jpg) no-repeat center top/100%;
 }
+
 .profile-3 header {
   background: #666 url(http://s3.gatheringmagic.com/uploads/2015/04/15/ML_3.jpg) no-repeat center top/100%;
 }
+
 .profile-4 header {
   background: #666 url(https://78.media.tumblr.com/8696531b07ec5b5fe8b58c3e4701cf4c/tumblr_ogrorv8MLU1sp8yqvo1_500.jpg) no-repeat center/100%;
 }
+
 .profile-5 header {
-  background: #666 url(https://nerdist.com/wp-content/uploads/2015/12/ZendikarArt_FEAT.png) no-repeat center/100%;
+  background: #666 url(https://www.hipstersofthecoast.com/wp-content/uploads/2016/12/Rain-of-tears.jpg) no-repeat center top/100%;
 }
+
 .profile-6 header {
-  background: #666 url(https://nerdist.com/wp-content/uploads/2015/12/ZendikarArt_FEAT.png) no-repeat center/100%;
+  background: #666 url(https://i.imgur.com/bIFnMZ3.jpg) no-repeat center/100%;
 }
+
 .profile-7 header {
   background: #666 url(https://nerdist.com/wp-content/uploads/2015/12/ZendikarArt_FEAT.png) no-repeat center/100%;
 }
+
 .profile-8 header {
   background: #666 url(https://nerdist.com/wp-content/uploads/2015/12/ZendikarArt_FEAT.png) no-repeat center/100%;
 }
+
 .profile-9 header {
   background: #666 url(https://nerdist.com/wp-content/uploads/2015/12/ZendikarArt_FEAT.png) no-repeat center/100%;
 }
+
 .profile-10 header {
   background: #666 url(https://nerdist.com/wp-content/uploads/2015/12/ZendikarArt_FEAT.png) no-repeat center/100%;
 }
+
 .profile-11 header {
   background: #666 url(https://nerdist.com/wp-content/uploads/2015/12/ZendikarArt_FEAT.png) no-repeat center/100%;
 }
+
 .profile-12 header {
-    background: #666 url(https://nerdist.com/wp-content/uploads/2015/12/ZendikarArt_FEAT.png) no-repeat center/100%;
+  background: #666 url(https://nerdist.com/wp-content/uploads/2015/12/ZendikarArt_FEAT.png) no-repeat center/100%;
 }
+
 article:hover header {
   background-color: #888;
 }
@@ -432,7 +457,6 @@ article:hover header {
 @media only screen and (min-width: 685px) {
   .page-header {
     align-items: flex-end;
-    background-color: #2B2B2B;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
