@@ -304,9 +304,9 @@ h4 {
 
 article .show-more {
   color: white;
-  padding-top: 8em;
+  padding-top: 2em;
   position: absolute;
-  top: 0;
+  bottom: 0;
   height: auto;
   width: 100%;
   z-index: 1;
@@ -344,7 +344,7 @@ article .show-more:hover {
 }
 
 .profile-4 header {
-  background: #666 url(images/wurm.jpg) no-repeat center top/100%;
+  background: #666 url(images/wurm.jpg) no-repeat center/110%;
 }
 
 .profile-5 header {
