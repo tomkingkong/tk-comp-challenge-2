@@ -1,4 +1,4 @@
-# Static Comp Challenge One
+# Static Comp Challenge Two
 ## Recreate this composition below, with your own theme
 ![alt text](https://raw.githubusercontent.com/tomkingkong/tk-comp-challenge-2/master/images/static-two-original-comp.png)
 
