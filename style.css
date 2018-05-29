@@ -12,6 +12,11 @@ body {
   width: 100vw;
 }
 
+button:focus {
+  outline: 2px solid #55B4F8;
+  outline-offset: 5px
+}
+
 hr {
   width: 45%;
 }
@@ -49,6 +54,7 @@ hr {
   box-sizing: content-box;
   border-radius: 50%;
   padding: 0.3em;
+  outline: 1;
   height: 1em;
   width: 1em;
 }
@@ -333,51 +339,51 @@ article .show-more:hover {
 /* Background URLs for Cards */
 
 .profile-1 header {
-  background: #666 url(https://nerdist.com/wp-content/uploads/2015/12/ZendikarArt_FEAT.png) no-repeat center top/100%;
+  background: #666 url(images/ZendikarArt_FEAT.png) no-repeat center top/100%;
 }
 
 .profile-2 header {
-  background: #666 url(http://2.bp.blogspot.com/-iHnXQ8dOnEg/VT4HM0nvt3I/AAAAAAABY3Y/mbmAOXHzXh4/s1600/1%2B-%2BThe%2BForgemaster%2Bby%2BBrandon%2BMoore.jpg) no-repeat center top/100%;
+  background: #666 url(images/forgemaster.jpg) no-repeat center top/100%;
 }
 
 .profile-3 header {
-  background: #666 url(http://s3.gatheringmagic.com/uploads/2015/04/15/ML_3.jpg) no-repeat center top/100%;
+  background: #666 url(images/ML_3.jpg) no-repeat center top/100%;
 }
 
 .profile-4 header {
-  background: #666 url(https://78.media.tumblr.com/8696531b07ec5b5fe8b58c3e4701cf4c/tumblr_ogrorv8MLU1sp8yqvo1_500.jpg) no-repeat center top/100%;
+  background: #666 url(images/wurm.jpg) no-repeat center top/100%;
 }
 
 .profile-5 header {
-  background: #666 url(https://www.hipstersofthecoast.com/wp-content/uploads/2016/12/Rain-of-tears.jpg) no-repeat center top/100%;
+  background: #666 url(images/Rain-of-tears.jpg) no-repeat center top/100%;
 }
 
 .profile-6 header {
-  background: #666 url(https://i.imgur.com/bIFnMZ3.jpg) no-repeat center top/100%;
+  background: #666 url(images/bIFnMZ3.jpg) no-repeat center top/100%;
 }
 
 .profile-7 header {
-  background: #666 url(https://orig00.deviantart.net/cc6a/f/2011/173/1/d/1de682dd65d7b77a33419b3551e7cad3-d3joa7a.jpg) no-repeat center top/100%;
+  background: #666 url(images/angel.jpg) no-repeat center top/100%;
 }
 
 .profile-8 header {
-  background: #666 url(https://cdn.shopify.com/s/files/1/1601/3103/files/Baleful_Strix_Playmat_-_Featured_1600x.jpg?v=1517034592) no-repeat center/100%;
+  background: #666 url(images/owl.jpg) no-repeat center/100%;
 }
 
 .profile-9 header {
-  background: #666 url(http://static1.1.sqspcdn.com/static/p/609000/5730545/1276599835293/progenitus.jpg?token=U%2BQbUg%2B1JlFUczwPXGM5vpQRuzE%3D) no-repeat center top/100%;
+  background: #666 url(images/progenitus.jpg) no-repeat center top/100%;
 }
 
 .profile-10 header {
-  background: #666 url(https://mcecentral.com/wp-content/uploads/2017/11/magic48.jpg) no-repeat center top/100%;
+  background: #666 url(images/magic48.jpg) no-repeat center top/100%;
 }
 
 .profile-11 header {
-  background: #666 url(https://orig00.deviantart.net/f611/f/2013/145/4/2/nicol_bolas_by_a_gl-d66ii59.png) no-repeat center/100%;
+  background: #666 url(images/nicol_bolas_by_a_gl-d66ii59.png) no-repeat center/100%;
 }
 
 .profile-12 header {
-  background: #666 url(http://img.gawkerassets.com/img/18bluok3iy2tujpg/original.jpg) no-repeat center top/100%;
+  background: #666 url(images/blacklotus.jpg) no-repeat center top/100%;
 }
 
 article:hover header {

@@ -1,495 +1,346 @@
 <!DOCTYPE html>
 <html lang="eng">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Magic</title>
-  <link rel="stylesheet" href="normalize.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab:700" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-    crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <container class="wrapper">
-    <div class="header-wrap">
-      <header class="page-header">
-        <nav class="username">
-          <button class="admin-button">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 494 494" width="15" height="15">
-              <g fill="#F3F3F3">
-                <path d="M247 307c80 0 145-65 145-145S327 17 247 17 102 82 102 162s65 145 145 145zm0-247c56 0 101 46 101 102s-45 101-101 101-101-45-101-101S191 60 247 60zM314 320c-7-2-15-1-21 4l-46 39-46-39c-6-5-14-6-21-4C150 330 0 381 0 455c0 12 9 22 21 22h451c12 0 22-10 22-22 0-74-150-125-180-135zM55 433c24-25 80-52 127-68l51 43c8 7 20 7 28 0l51-43c47 16 103 43 127 68H55z"/>
-              </g>
-            </svg>
-          </button>
-          <p>Admin Username</p>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -50 488 488" width="10" height="10">
-            <path d="M0 49.017c0-13.824 11.207-25.03 25.03-25.03h438.017c13.824 0 25.029 11.207 25.029 25.03L262.81 455.745s-18.772 18.773-37.545 0C206.494 436.973 0 49.017 0 49.017z" fill="#55B4F8" />
-          </svg>
-        </nav>
-        <nav class="header-nav">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 481 481" width="15" height="15" preserveAspectRatio="xMidYMid meet">
-            <path d="M381.6 309.4c-27.7 0-52.4 13.2-68.2 33.6l-132.3-73.9c3.1-8.9 4.8-18.5 4.8-28.4 0-10-1.7-19.5-4.9-28.5l132.2-73.8c15.7 20.5 40.5 33.8 68.3 33.8 47.4 0 86.1-38.6 86.1-86.1S429 0 381.5 0s-86.1 38.6-86.1 86.1c0 10 1.7 19.6 4.9 28.5l-132.1 73.8c-15.7-20.6-40.5-33.8-68.3-33.8-47.4 0-86.1 38.6-86.1 86.1s38.7 86.1 86.2 86.1c27.8 0 52.6-13.3 68.4-33.9l132.2 73.9c-3.2 9-5 18.7-5 28.7 0 47.4 38.6 86.1 86.1 86.1s86.1-38.6 86.1-86.1-38.7-86.1-86.2-86.1zm0-282.3c32.6 0 59.1 26.5 59.1 59.1s-26.5 59.1-59.1 59.1-59.1-26.5-59.1-59.1 26.6-59.1 59.1-59.1zM100 299.8c-32.6 0-59.1-26.5-59.1-59.1s26.5-59.1 59.1-59.1 59.1 26.5 59.1 59.1-26.6 59.1-59.1 59.1zm281.6 154.7c-32.6 0-59.1-26.5-59.1-59.1s26.5-59.1 59.1-59.1 59.1 26.5 59.1 59.1-26.5 59.1-59.1 59.1z" fill="#FFF" />
-          </svg>
-          <p>
-            SHARES
-          </p>
-          <svg class="nav-middle-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 377 377" width="17" height="17">
-            <circle cx="15" cy="88.5" r="15" data-original="#000000" class="active-path" data-old_color="#000000" fill="#55B4F8" />
-            <path data-original="#000000" class="active-path" data-old_color="#000000" fill="#55B4F8" d="M75 73.5h302v30H75z" />
-            <circle cx="15" cy="288.5" r="15" data-original="#000000" class="active-path" data-old_color="#000000" fill="#55B4F8" />
-            <path data-original="#000000" class="active-path" data-old_color="#000000" fill="#55B4F8" d="M75 273.5h302v30H75z" />
-            <circle cx="15" cy="188.5" r="15" data-original="#000000" class="active-path" data-old_color="#000000" fill="#55B4F8" />
-            <path data-original="#000000" class="active-path" data-old_color="#000000" fill="#55B4F8" d="M75 173.5h302v30H75z" />
-          </svg>
-          <p>
-            DECKS
-          </p>
-          <svg class="header-link" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 494 494" width="15" height="15">
-            <g fill="#55B4F8">
-              <path d="M247 307c80 0 145-65 145-145S327 17 247 17 102 82 102 162s65 145 145 145zm0-247c56 0 101 46 101 102s-45 101-101 101-101-45-101-101S191 60 247 60zM314 320c-7-2-15-1-21 4l-46 39-46-39c-6-5-14-6-21-4C150 330 0 381 0 455c0 12 9 22 21 22h451c12 0 22-10 22-22 0-74-150-125-180-135zM55 433c24-25 80-52 127-68l51 43c8 7 20 7 28 0l51-43c47 16 103 43 127 68H55z"/>
-            </g>
-          </svg>
-          <p>
-            PROFILE
-          </p>
-        </nav>
-        <a href="https://magic.wizards.com/en" target="_blank" class="logo"><img alt="Magic The Gathering" src="images/Magic_Logo.png"></a>
-      </header>
-    </div>
-    <h2 class="collectibles">Collectibles</h2>
-    <section class="articles">
-      <article class="profile-1">
-        <header>
-          <button class="share-button">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52.495 52.495" width="22" height="22">
-              <g fill="#2B2B2B">
-                <path d="M31.113 16.038V3.99l19.971 20.08-19.971 20.08V32.102S13.378 27.81 1.264 48.166c0 0-3.02-15.536 10.51-26.794 0-.001 6.129-5.732 19.339-5.334z"/>
-                <path d="M.783 50.929l-.5-2.573c-.031-.161-2.974-16.25 10.852-27.753.202-.191 6.116-5.585 18.674-5.585.102 0 .203 0 .305.001V1.566L52.495 24.07 30.113 46.574V32.937c-.662-.098-1.725-.213-3.071-.213-5.761 0-16.657 2.073-24.918 15.953L.783 50.929zm29.025-33.911c-11.776 0-17.297 5.033-17.352 5.084C2.911 30.046 1.878 40.274 2.004 45.149 14.365 27.091 31.127 31.077 31.348 31.13l.765.185v10.411L49.674 24.07 32.113 6.413v10.654l-1.03-.03c-.433-.013-.857-.019-1.275-.019z"/>
-              </g>
-            </svg>
-          </button>
-          <aside>
-            <small>CARDS</small>
-            <h3>01</h3>
-          </aside>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Magic</title>
+    <link href="normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab:700" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <container class="wrapper">
+      <div class="header-wrap">
+        <header class="page-header">
+          <nav class="username">
+            <button class="admin-button" aria-label="username">
+              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 494 494" width="15" height="15"><g fill="#F3F3F3"><path d="M247 307c80 0 145-65 145-145S327 17 247 17 102 82 102 162s65 145 145 145zm0-247c56 0 101 46 101 102s-45 101-101 101-101-45-101-101S191 60 247 60zM314 320c-7-2-15-1-21 4l-46 39-46-39c-6-5-14-6-21-4C150 330 0 381 0 455c0 12 9 22 21 22h451c12 0 22-10 22-22 0-74-150-125-180-135zM55 433c24-25 80-52 127-68l51 43c8 7 20 7 28 0l51-43c47 16 103 43 127 68H55z"/></g></svg>
+            </button>
+            <p>Admin Username</p>
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -50 488 488" width="10" height="10"><path d="M0 49.017c0-13.824 11.207-25.03 25.03-25.03h438.017c13.824 0 25.029 11.207 25.029 25.03L262.81 455.745s-18.772 18.773-37.545 0C206.494 436.973 0 49.017 0 49.017z" fill="#55B4F8"/></svg>
+          </nav>
+          <nav class="header-nav">
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 481 481" width="15" height="15" preserveAspectRatio="xMidYMid meet"><path d="M381.6 309.4c-27.7 0-52.4 13.2-68.2 33.6l-132.3-73.9c3.1-8.9 4.8-18.5 4.8-28.4 0-10-1.7-19.5-4.9-28.5l132.2-73.8c15.7 20.5 40.5 33.8 68.3 33.8 47.4 0 86.1-38.6 86.1-86.1S429 0 381.5 0s-86.1 38.6-86.1 86.1c0 10 1.7 19.6 4.9 28.5l-132.1 73.8c-15.7-20.6-40.5-33.8-68.3-33.8-47.4 0-86.1 38.6-86.1 86.1s38.7 86.1 86.2 86.1c27.8 0 52.6-13.3 68.4-33.9l132.2 73.9c-3.2 9-5 18.7-5 28.7 0 47.4 38.6 86.1 86.1 86.1s86.1-38.6 86.1-86.1-38.7-86.1-86.2-86.1zm0-282.3c32.6 0 59.1 26.5 59.1 59.1s-26.5 59.1-59.1 59.1-59.1-26.5-59.1-59.1 26.6-59.1 59.1-59.1zM100 299.8c-32.6 0-59.1-26.5-59.1-59.1s26.5-59.1 59.1-59.1 59.1 26.5 59.1 59.1-26.6 59.1-59.1 59.1zm281.6 154.7c-32.6 0-59.1-26.5-59.1-59.1s26.5-59.1 59.1-59.1 59.1 26.5 59.1 59.1-26.5 59.1-59.1 59.1z" fill="#FFF"/></svg>
+            <p aria-label="share" role="share">SHARES</p>
+            <svg aria-hidden="true" class="nav-middle-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 377 377" width="17" height="17"><circle cx="15" cy="88.5" r="15" data-original="#000000" class="active-path" data-old_color="#000000" fill="#55B4F8"/><path data-original="#000000" class="active-path" data-old_color="#000000" fill="#55B4F8" d="M75 73.5h302v30H75z"/><circle cx="15" cy="288.5" r="15" data-original="#000000" class="active-path" data-old_color="#000000" fill="#55B4F8"/><path data-original="#000000" class="active-path" data-old_color="#000000" fill="#55B4F8" d="M75 273.5h302v30H75z"/><circle cx="15" cy="188.5" r="15" data-original="#000000" class="active-path" data-old_color="#000000" fill="#55B4F8"/><path data-original="#000000" class="active-path" data-old_color="#000000" fill="#55B4F8" d="M75 173.5h302v30H75z"/></svg>
+            <p aria-label="decks" role="decks">DECKS</p>
+            <svg aria-hidden="true" class="header-link" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 494 494" width="15" height="15"><g fill="#55B4F8"><path d="M247 307c80 0 145-65 145-145S327 17 247 17 102 82 102 162s65 145 145 145zm0-247c56 0 101 46 101 102s-45 101-101 101-101-45-101-101S191 60 247 60zM314 320c-7-2-15-1-21 4l-46 39-46-39c-6-5-14-6-21-4C150 330 0 381 0 455c0 12 9 22 21 22h451c12 0 22-10 22-22 0-74-150-125-180-135zM55 433c24-25 80-52 127-68l51 43c8 7 20 7 28 0l51-43c47 16 103 43 127 68H55z"/></g></svg>
+            <p aria-label="profile" role="profile">PROFILE</p>
+          </nav>
+          <a class="logo" href="https://magic.wizards.com/en" target="_blank"><img aria-label="Magic The Gathering" alt="Magic The Gathering" src="images/Magic_Logo.png"></a>
         </header>
-        <button class="show-more">
+      </div>
+      <h2 class="collectibles" aria-label="collectibles">Collectibles</h2>
+      <section class="articles">
+        <article class="profile-1">
+          <header>
+            <button class="share-button" aria-label="share">
+              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52.495 52.495" width="22" height="22"><g fill="#2B2B2B"><path d="M31.113 16.038V3.99l19.971 20.08-19.971 20.08V32.102S13.378 27.81 1.264 48.166c0 0-3.02-15.536 10.51-26.794 0-.001 6.129-5.732 19.339-5.334z"/><path d="M.783 50.929l-.5-2.573c-.031-.161-2.974-16.25 10.852-27.753.202-.191 6.116-5.585 18.674-5.585.102 0 .203 0 .305.001V1.566L52.495 24.07 30.113 46.574V32.937c-.662-.098-1.725-.213-3.071-.213-5.761 0-16.657 2.073-24.918 15.953L.783 50.929zm29.025-33.911c-11.776 0-17.297 5.033-17.352 5.084C2.911 30.046 1.878 40.274 2.004 45.149 14.365 27.091 31.127 31.077 31.348 31.13l.765.185v10.411L49.674 24.07 32.113 6.413v10.654l-1.03-.03c-.433-.013-.857-.019-1.275-.019z"/></g></svg>
+            </button>
+            <aside>
+              <small>CARDS</small>
+              <h3>01</h3>
+            </aside>
+          </header>
+          <button class="show-more" aria-label="show more">
+            <hr>
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -20 129 129" width="20" height="20"><path d="M121.3 34.6c-1.6-1.6-4.2-1.6-5.8 0l-51 51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8 0-1.6 1.6-1.6 4.2 0 5.8l53.9 53.9c.8.8 1.8 1.2 2.9 1.2 1 0 2.1-.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2.1-5.8z" fill="#FFF"/></svg>
+            <hr>
+          </button>
+          <main>
+            <h4>Eldrazi Bro</h4>
+            <p class="date">Tuesday 05/29/18 08:00am</p>
+            <p class="url"><a href="#" target="_blank">https://nerdist.com/wp-content/uploads/2015/12/ZendikarArt_FEAT.png</a></p>
+            <p>EDITION</p>
+            <h4 class="edition">The Forsaken One</h4>
+            <p>ORDER</p>
+            <h3 class="order">08</h3>
+          </main>
+        </article>
+        <article class="profile-2">
+          <header>
+            <button class="share-button" aria-label="share">
+              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52.495 52.495" width="22" height="22"><g fill="#2B2B2B"><path d="M31.113 16.038V3.99l19.971 20.08-19.971 20.08V32.102S13.378 27.81 1.264 48.166c0 0-3.02-15.536 10.51-26.794 0-.001 6.129-5.732 19.339-5.334z"/><path d="M.783 50.929l-.5-2.573c-.031-.161-2.974-16.25 10.852-27.753.202-.191 6.116-5.585 18.674-5.585.102 0 .203 0 .305.001V1.566L52.495 24.07 30.113 46.574V32.937c-.662-.098-1.725-.213-3.071-.213-5.761 0-16.657 2.073-24.918 15.953L.783 50.929zm29.025-33.911c-11.776 0-17.297 5.033-17.352 5.084C2.911 30.046 1.878 40.274 2.004 45.149 14.365 27.091 31.127 31.077 31.348 31.13l.765.185v10.411L49.674 24.07 32.113 6.413v10.654l-1.03-.03c-.433-.013-.857-.019-1.275-.019z"/></g></svg>
+            </button>
+            <aside>
+              <small>CARDS</small>
+              <h3>02</h3>
+            </aside>
+          </header>
+          <button class="show-more" aria-label="show more">
+            <hr>
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -20 129 129" width="20" height="20"><path d="M121.3 34.6c-1.6-1.6-4.2-1.6-5.8 0l-51 51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8 0-1.6 1.6-1.6 4.2 0 5.8l53.9 53.9c.8.8 1.8 1.2 2.9 1.2 1 0 2.1-.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2.1-5.8z" fill="#FFF"/></svg>
+            <hr>
+          </button>
+          <main>
+            <h4>Forgemaster</h4>
+            <p class="date">Tuesday 05/29/18 08:00am</p>
+            <p class="url"><a href="#" target="_blank">http://2.bp.blogspot.com/-iHnXQ8dOnEg/VT4HM0nvt3I/AAAAAAABY3Y/mbmAOXHzXh4/s1600/1%2B-%2BThe%2BForgemaster%2Bby%2BBrandon%2BMoore.jpg</a></p>
+            <p>EDITION</p>
+            <h4 class="edition">Creation</h4>
+            <p>ORDER</p>
+            <h3 class="order">10</h3>
+          </main>
+        </article>
+        <article class="profile-3">
+          <header>
+            <button class="share-button" aria-label="share">
+              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52.495 52.495" width="22" height="22"><g fill="#2B2B2B"><path d="M31.113 16.038V3.99l19.971 20.08-19.971 20.08V32.102S13.378 27.81 1.264 48.166c0 0-3.02-15.536 10.51-26.794 0-.001 6.129-5.732 19.339-5.334z"/><path d="M.783 50.929l-.5-2.573c-.031-.161-2.974-16.25 10.852-27.753.202-.191 6.116-5.585 18.674-5.585.102 0 .203 0 .305.001V1.566L52.495 24.07 30.113 46.574V32.937c-.662-.098-1.725-.213-3.071-.213-5.761 0-16.657 2.073-24.918 15.953L.783 50.929zm29.025-33.911c-11.776 0-17.297 5.033-17.352 5.084C2.911 30.046 1.878 40.274 2.004 45.149 14.365 27.091 31.127 31.077 31.348 31.13l.765.185v10.411L49.674 24.07 32.113 6.413v10.654l-1.03-.03c-.433-.013-.857-.019-1.275-.019z"/></g></svg>
+            </button>
+            <aside>
+              <small>CARDS</small>
+              <h3>04</h3>
+            </aside>
+          </header>
+          <button class="show-more" aria-label="show more">
+            <hr>
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -20 129 129" width="20" height="20"><path d="M121.3 34.6c-1.6-1.6-4.2-1.6-5.8 0l-51 51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8 0-1.6 1.6-1.6 4.2 0 5.8l53.9 53.9c.8.8 1.8 1.2 2.9 1.2 1 0 2.1-.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2.1-5.8z" fill="#FFF"/></svg>
+            <hr>
+          </button>
+          <main>
+            <h4>Slices n' Dices</h4>
+            <p class="date">Tuesday 05/29/18 08:00am</p>
+            <p class="url"><a href="#" target="_blank">http://s3.gatheringmagic.com/uploads/2015/04/15/ML_3.jpg</a></p>
+            <p>EDITION</p>
+            <h4 class="edition">Mythril Works</h4>
+            <p>ORDER</p>
+            <h3 class="order">04</h3>
+          </main>
+        </article>
+        <article class="profile-4">
+          <header>
+            <button class="share-button" aria-label="share">
+              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52.495 52.495" width="22" height="22"><g fill="#2B2B2B"><path d="M31.113 16.038V3.99l19.971 20.08-19.971 20.08V32.102S13.378 27.81 1.264 48.166c0 0-3.02-15.536 10.51-26.794 0-.001 6.129-5.732 19.339-5.334z"/><path d="M.783 50.929l-.5-2.573c-.031-.161-2.974-16.25 10.852-27.753.202-.191 6.116-5.585 18.674-5.585.102 0 .203 0 .305.001V1.566L52.495 24.07 30.113 46.574V32.937c-.662-.098-1.725-.213-3.071-.213-5.761 0-16.657 2.073-24.918 15.953L.783 50.929zm29.025-33.911c-11.776 0-17.297 5.033-17.352 5.084C2.911 30.046 1.878 40.274 2.004 45.149 14.365 27.091 31.127 31.077 31.348 31.13l.765.185v10.411L49.674 24.07 32.113 6.413v10.654l-1.03-.03c-.433-.013-.857-.019-1.275-.019z"/></g></svg>
+            </button>
+            <aside>
+              <small>CARDS</small>
+              <h3>02</h3>
+            </aside>
+          </header>
+          <button class="show-more" aria-label="show more">
+            <hr>
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -20 129 129" width="20" height="20"><path d="M121.3 34.6c-1.6-1.6-4.2-1.6-5.8 0l-51 51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8 0-1.6 1.6-1.6 4.2 0 5.8l53.9 53.9c.8.8 1.8 1.2 2.9 1.2 1 0 2.1-.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2.1-5.8z" fill="#FFF"/></svg>
+            <hr>
+          </button>
+          <main>
+            <h4>Forest Wurm</h4>
+            <p class="date">Tuesday 05/29/18 08:00am</p>
+            <p class="url"><a href="#" target="_blank">https://78.media.tumblr.com/8696531b07ec5b5fe8b58c3e4701cf4c/tumblr_ogrorv8MLU1sp8yqvo1_500.jpg</a></p>
+            <p>EDITION</p>
+            <h4 class="edition">You've Got Wurms</h4>
+            <p>ORDER</p>
+            <h3 class="order">07</h3>
+          </main>
+        </article>
+        <article class="profile-5">
+          <header>
+            <button class="share-button" aria-label="share">
+              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52.495 52.495" width="22" height="22"><g fill="#2B2B2B"><path d="M31.113 16.038V3.99l19.971 20.08-19.971 20.08V32.102S13.378 27.81 1.264 48.166c0 0-3.02-15.536 10.51-26.794 0-.001 6.129-5.732 19.339-5.334z"/><path d="M.783 50.929l-.5-2.573c-.031-.161-2.974-16.25 10.852-27.753.202-.191 6.116-5.585 18.674-5.585.102 0 .203 0 .305.001V1.566L52.495 24.07 30.113 46.574V32.937c-.662-.098-1.725-.213-3.071-.213-5.761 0-16.657 2.073-24.918 15.953L.783 50.929zm29.025-33.911c-11.776 0-17.297 5.033-17.352 5.084C2.911 30.046 1.878 40.274 2.004 45.149 14.365 27.091 31.127 31.077 31.348 31.13l.765.185v10.411L49.674 24.07 32.113 6.413v10.654l-1.03-.03c-.433-.013-.857-.019-1.275-.019z"/></g></svg>
+            </button>
+            <aside>
+              <small>CARDS</small>
+              <h3>04</h3>
+            </aside>
+          </header>
+          <button class="show-more" aria-label="show more">
+            <hr>
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -20 129 129" width="20" height="20"><path d="M121.3 34.6c-1.6-1.6-4.2-1.6-5.8 0l-51 51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8 0-1.6 1.6-1.6 4.2 0 5.8l53.9 53.9c.8.8 1.8 1.2 2.9 1.2 1 0 2.1-.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2.1-5.8z" fill="#FFF"/></svg>
+            <hr>
+          </button>
+          <main>
+            <h4>Rain of Tears</h4>
+            <p class="date">Tuesday 05/29/18 08:00am</p>
+            <p class="url"><a href="#" target="_blank">https://www.hipstersofthecoast.com/wp-content/uploads/2016/12/Rain-of-tears.jpg</a></p>
+            <p>EDITION</p>
+            <h4 class="edition">Land Destruction</h4>
+            <p>ORDER</p>
+            <h3 class="order">02</h3>
+          </main>
+        </article>
+        <article class="profile-6">
+          <header>
+            <button class="share-button" aria-label="share">
+              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52.495 52.495" width="22" height="22"><g fill="#2B2B2B"><path d="M31.113 16.038V3.99l19.971 20.08-19.971 20.08V32.102S13.378 27.81 1.264 48.166c0 0-3.02-15.536 10.51-26.794 0-.001 6.129-5.732 19.339-5.334z"/><path d="M.783 50.929l-.5-2.573c-.031-.161-2.974-16.25 10.852-27.753.202-.191 6.116-5.585 18.674-5.585.102 0 .203 0 .305.001V1.566L52.495 24.07 30.113 46.574V32.937c-.662-.098-1.725-.213-3.071-.213-5.761 0-16.657 2.073-24.918 15.953L.783 50.929zm29.025-33.911c-11.776 0-17.297 5.033-17.352 5.084C2.911 30.046 1.878 40.274 2.004 45.149 14.365 27.091 31.127 31.077 31.348 31.13l.765.185v10.411L49.674 24.07 32.113 6.413v10.654l-1.03-.03c-.433-.013-.857-.019-1.275-.019z"/></g></svg>
+            </button>
+            <aside>
+              <small>CARDS</small>
+              <h3>04</h3>
+            </aside>
+          </header>
+          <button class="show-more" aria-label="show more">
+            <hr>
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -20 129 129" width="20" height="20"><path d="M121.3 34.6c-1.6-1.6-4.2-1.6-5.8 0l-51 51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8 0-1.6 1.6-1.6 4.2 0 5.8l53.9 53.9c.8.8 1.8 1.2 2.9 1.2 1 0 2.1-.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2.1-5.8z" fill="#FFF"/></svg>
+            <hr>
+          </button>
+          <main>
+            <h4>Sliver Queen</h4>
+            <p class="date">Tuesday 05/29/18 08:00am</p>
+            <p class="url"><a href="#" target="_blank">https://i.imgur.com/bIFnMZ3.jpg</a></p>
+            <p>EDITION</p>
+            <h4 class="edition">Slivers</h4>
+            <p>ORDER</p>
+            <h3 class="order">15</h3>
+          </main>
+        </article>
+        <article class="profile-7">
+          <header>
+            <button class="share-button" aria-label="share">
+              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52.495 52.495" width="22" height="22"><g fill="#2B2B2B"><path d="M31.113 16.038V3.99l19.971 20.08-19.971 20.08V32.102S13.378 27.81 1.264 48.166c0 0-3.02-15.536 10.51-26.794 0-.001 6.129-5.732 19.339-5.334z"/><path d="M.783 50.929l-.5-2.573c-.031-.161-2.974-16.25 10.852-27.753.202-.191 6.116-5.585 18.674-5.585.102 0 .203 0 .305.001V1.566L52.495 24.07 30.113 46.574V32.937c-.662-.098-1.725-.213-3.071-.213-5.761 0-16.657 2.073-24.918 15.953L.783 50.929zm29.025-33.911c-11.776 0-17.297 5.033-17.352 5.084C2.911 30.046 1.878 40.274 2.004 45.149 14.365 27.091 31.127 31.077 31.348 31.13l.765.185v10.411L49.674 24.07 32.113 6.413v10.654l-1.03-.03c-.433-.013-.857-.019-1.275-.019z"/></g></svg>
+            </button>
+            <aside>
+              <small>CARDS</small>
+              <h3>04</h3>
+            </aside>
+          </header>
+          <button class="show-more" aria-label="show more">
+            <hr>
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -20 129 129" width="20" height="20"><path d="M121.3 34.6c-1.6-1.6-4.2-1.6-5.8 0l-51 51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8 0-1.6 1.6-1.6 4.2 0 5.8l53.9 53.9c.8.8 1.8 1.2 2.9 1.2 1 0 2.1-.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2.1-5.8z" fill="#FFF"/></svg>
+            <hr>
+          </button>
+          <main>
+            <h4>Angel Incarnate</h4>
+            <p class="date">Tuesday 05/29/18 08:00am</p>
+            <p class="url"><a href="#" target="_blank">https://orig00.deviantart.net/cc6a/f/2011/173/1/d/1de682dd65d7b77a33419b3551e7cad3-d3joa7a.jpg</a></p>
+            <p>EDITION</p>
+            <h4 class="edition">Archangels</h4>
+            <p>ORDER</p>
+            <h3 class="order">25</h3>
+          </main>
+        </article>
+        <article class="profile-8">
+          <header>
+            <button class="share-button" aria-label="share">
+              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52.495 52.495" width="22" height="22"><g fill="#2B2B2B"><path d="M31.113 16.038V3.99l19.971 20.08-19.971 20.08V32.102S13.378 27.81 1.264 48.166c0 0-3.02-15.536 10.51-26.794 0-.001 6.129-5.732 19.339-5.334z"/><path d="M.783 50.929l-.5-2.573c-.031-.161-2.974-16.25 10.852-27.753.202-.191 6.116-5.585 18.674-5.585.102 0 .203 0 .305.001V1.566L52.495 24.07 30.113 46.574V32.937c-.662-.098-1.725-.213-3.071-.213-5.761 0-16.657 2.073-24.918 15.953L.783 50.929zm29.025-33.911c-11.776 0-17.297 5.033-17.352 5.084C2.911 30.046 1.878 40.274 2.004 45.149 14.365 27.091 31.127 31.077 31.348 31.13l.765.185v10.411L49.674 24.07 32.113 6.413v10.654l-1.03-.03c-.433-.013-.857-.019-1.275-.019z"/></g></svg>
+            </button>
+            <aside>
+              <small>CARDS</small>
+              <h3>04</h3>
+            </aside>
+          </header>
+          <button class="show-more" aria-label="show more">
+            <hr>
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -20 129 129" width="20" height="20"><path d="M121.3 34.6c-1.6-1.6-4.2-1.6-5.8 0l-51 51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8 0-1.6 1.6-1.6 4.2 0 5.8l53.9 53.9c.8.8 1.8 1.2 2.9 1.2 1 0 2.1-.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2.1-5.8z" fill="#FFF"/></svg>
+            <hr>
+          </button>
+          <main>
+            <h4>Trippy Owl</h4>
+            <p class="date">Tuesday 05/29/18 08:00am</p>
+            <p class="url"><a href="#" target="_blank">https://cdn.shopify.com/s/files/1/1601/3103/files/Baleful_Strix_Playmat_-_Featured_1600x.jpg?v=1517034592</a></p>
+            <p>EDITION</p>
+            <h4 class="edition">Hoot</h4>
+            <p>ORDER</p>
+            <h3 class="order">01</h3>
+          </main>
+        </article>
+        <article class="profile-9">
+          <header>
+            <button class="share-button" aria-label="share">
+              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52.495 52.495" width="22" height="22"><g fill="#2B2B2B"><path d="M31.113 16.038V3.99l19.971 20.08-19.971 20.08V32.102S13.378 27.81 1.264 48.166c0 0-3.02-15.536 10.51-26.794 0-.001 6.129-5.732 19.339-5.334z"/><path d="M.783 50.929l-.5-2.573c-.031-.161-2.974-16.25 10.852-27.753.202-.191 6.116-5.585 18.674-5.585.102 0 .203 0 .305.001V1.566L52.495 24.07 30.113 46.574V32.937c-.662-.098-1.725-.213-3.071-.213-5.761 0-16.657 2.073-24.918 15.953L.783 50.929zm29.025-33.911c-11.776 0-17.297 5.033-17.352 5.084C2.911 30.046 1.878 40.274 2.004 45.149 14.365 27.091 31.127 31.077 31.348 31.13l.765.185v10.411L49.674 24.07 32.113 6.413v10.654l-1.03-.03c-.433-.013-.857-.019-1.275-.019z"/></g></svg>
+            </button>
+            <aside>
+              <small>CARDS</small>
+              <h3>02</h3>
+            </aside>
+          </header>
+          <button class="show-more" aria-label="show more">
+            <hr>
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -20 129 129" width="20" height="20"><path d="M121.3 34.6c-1.6-1.6-4.2-1.6-5.8 0l-51 51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8 0-1.6 1.6-1.6 4.2 0 5.8l53.9 53.9c.8.8 1.8 1.2 2.9 1.2 1 0 2.1-.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2.1-5.8z" fill="#FFF"/></svg>
+            <hr>
+          </button>
+          <main>
+            <h4>Leviathan</h4>
+            <p class="date">Tuesday 05/29/18 08:00am</p>
+            <p class="url"><a href="#" target="_blank">http://2win.2winstage.com/p/recipients_namehere</a></p>
+            <p>EDITION</p>
+            <h4 class="edition">Wurmys</h4>
+            <p>ORDER</p>
+            <h3 class="order">08</h3>
+          </main>
+        </article>
+        <article class="profile-10">
+          <header>
+            <button class="share-button" aria-label="share">
+              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52.495 52.495" width="22" height="22"><g fill="#2B2B2B"><path d="M31.113 16.038V3.99l19.971 20.08-19.971 20.08V32.102S13.378 27.81 1.264 48.166c0 0-3.02-15.536 10.51-26.794 0-.001 6.129-5.732 19.339-5.334z"/><path d="M.783 50.929l-.5-2.573c-.031-.161-2.974-16.25 10.852-27.753.202-.191 6.116-5.585 18.674-5.585.102 0 .203 0 .305.001V1.566L52.495 24.07 30.113 46.574V32.937c-.662-.098-1.725-.213-3.071-.213-5.761 0-16.657 2.073-24.918 15.953L.783 50.929zm29.025-33.911c-11.776 0-17.297 5.033-17.352 5.084C2.911 30.046 1.878 40.274 2.004 45.149 14.365 27.091 31.127 31.077 31.348 31.13l.765.185v10.411L49.674 24.07 32.113 6.413v10.654l-1.03-.03c-.433-.013-.857-.019-1.275-.019z"/></g></svg>
+            </button>
+            <aside>
+              <small>CARDS</small>
+              <h3>03</h3>
+            </aside>
+          </header>
+          <button class="show-more" aria-label="show more">
+            <hr>
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -20 129 129" width="20" height="20"><path d="M121.3 34.6c-1.6-1.6-4.2-1.6-5.8 0l-51 51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8 0-1.6 1.6-1.6 4.2 0 5.8l53.9 53.9c.8.8 1.8 1.2 2.9 1.2 1 0 2.1-.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2.1-5.8z" fill="#FFF"/></svg>
+            <hr>
+          </button>
+          <main>
+            <h4>Kitty</h4>
+            <p class="date">Tuesday 05/29/18 08:00am</p>
+            <p class="url"><a href="#" target="_blank">https://mcecentral.com/wp-content/uploads/2017/11/magic48.jpg</a></p>
+            <p>EDITION</p>
+            <h4 class="edition">Purrfect</h4>
+            <p>ORDER</p>
+            <h3 class="order">11</h3>
+          </main>
+        </article>
+        <article class="profile-11">
+          <header>
+            <button class="share-button" aria-label="share">
+              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52.495 52.495" width="22" height="22"><g fill="#2B2B2B"><path d="M31.113 16.038V3.99l19.971 20.08-19.971 20.08V32.102S13.378 27.81 1.264 48.166c0 0-3.02-15.536 10.51-26.794 0-.001 6.129-5.732 19.339-5.334z"/><path d="M.783 50.929l-.5-2.573c-.031-.161-2.974-16.25 10.852-27.753.202-.191 6.116-5.585 18.674-5.585.102 0 .203 0 .305.001V1.566L52.495 24.07 30.113 46.574V32.937c-.662-.098-1.725-.213-3.071-.213-5.761 0-16.657 2.073-24.918 15.953L.783 50.929zm29.025-33.911c-11.776 0-17.297 5.033-17.352 5.084C2.911 30.046 1.878 40.274 2.004 45.149 14.365 27.091 31.127 31.077 31.348 31.13l.765.185v10.411L49.674 24.07 32.113 6.413v10.654l-1.03-.03c-.433-.013-.857-.019-1.275-.019z"/></g></svg>
+            </button>
+            <aside>
+              <small>CARDS</small>
+              <h3>04</h3>
+            </aside>
+          </header>
+          <button class="show-more" aria-label="show more">
+            <hr>
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -20 129 129" width="20" height="20"><path d="M121.3 34.6c-1.6-1.6-4.2-1.6-5.8 0l-51 51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8 0-1.6 1.6-1.6 4.2 0 5.8l53.9 53.9c.8.8 1.8 1.2 2.9 1.2 1 0 2.1-.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2.1-5.8z" fill="#FFF"/></svg>
+            <hr>
+          </button>
+          <main>
+            <h4>Nicol Bolas</h4>
+            <p class="date">Tuesday 05/29/18 08:00am</p>
+            <p class="url"><a href="#" target="_blank">https://orig00.deviantart.net/f611/f/2013/145/4/2/nicol_bolas_by_a_gl-d66ii59.png</a></p>
+            <p>EDITION</p>
+            <h4 class="edition">Defeat</h4>
+            <p>ORDER</p>
+            <h3 class="order">06</h3>
+          </main>
+        </article>
+        <article class="profile-12">
+          <header>
+            <button class="share-button" aria-label="share">
+              <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52.495 52.495" width="22" height="22"><g fill="#2B2B2B"><path d="M31.113 16.038V3.99l19.971 20.08-19.971 20.08V32.102S13.378 27.81 1.264 48.166c0 0-3.02-15.536 10.51-26.794 0-.001 6.129-5.732 19.339-5.334z"/><path d="M.783 50.929l-.5-2.573c-.031-.161-2.974-16.25 10.852-27.753.202-.191 6.116-5.585 18.674-5.585.102 0 .203 0 .305.001V1.566L52.495 24.07 30.113 46.574V32.937c-.662-.098-1.725-.213-3.071-.213-5.761 0-16.657 2.073-24.918 15.953L.783 50.929zm29.025-33.911c-11.776 0-17.297 5.033-17.352 5.084C2.911 30.046 1.878 40.274 2.004 45.149 14.365 27.091 31.127 31.077 31.348 31.13l.765.185v10.411L49.674 24.07 32.113 6.413v10.654l-1.03-.03c-.433-.013-.857-.019-1.275-.019z"/></g></svg>
+            </button>
+            <aside>
+              <small>CARDS</small>
+              <h3>02</h3>
+            </aside>
+          </header>
+          <button class="show-more" aria-label="show more">
+            <hr>
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 -20 129 129" width="20" height="20"><path d="M121.3 34.6c-1.6-1.6-4.2-1.6-5.8 0l-51 51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8 0-1.6 1.6-1.6 4.2 0 5.8l53.9 53.9c.8.8 1.8 1.2 2.9 1.2 1 0 2.1-.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2.1-5.8z" fill="#FFF"/></svg>
+            <hr>
+          </button>
+          <main>
+            <h4>Black Lotus</h4>
+            <p class="date">Tuesday 05/29/18 08:00am</p>
+            <p class="url"><a href="#" target="_blank">http://img.gawkerassets.com/img/18bluok3iy2tujpg/original.jpg</a></p>
+            <p>EDITION</p>
+            <h4 class="edition">You Found It!</h4>
+            <p>ORDER</p>
+            <h3 class="order">99</h3>
+          </main>
+        </article>
+        <button class="section-show-more" aria-label="show more">
           <hr>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -20 129 129" width="20" height="20">
-            <path d="M121.3 34.6c-1.6-1.6-4.2-1.6-5.8 0l-51 51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8 0-1.6 1.6-1.6 4.2 0 5.8l53.9 53.9c.8.8 1.8 1.2 2.9 1.2 1 0 2.1-.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2.1-5.8z"
-              fill="#FFF" />
-          </svg>
+          <div>
+            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" width="15" height="15"><path d="M121.3 34.6c-1.6-1.6-4.2-1.6-5.8 0l-51 51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8 0-1.6 1.6-1.6 4.2 0 5.8l53.9 53.9c.8.8 1.8 1.2 2.9 1.2 1 0 2.1-.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2.1-5.8z" data-original="#000000"/></svg>  
+          </div>      
           <hr>
         </button>
-        <main>
-          <h4>Eldrazi Bro</h4>
-          <p class="date">Tuesday 05/29/18 08:00am</p>
-          <p class="url">
-            <a href="#" target="_blank">https://nerdist.com/wp-content/uploads/2015/12/ZendikarArt_FEAT.png</a>
-          </p>
-          <p>EDITION</p>
-          <h4 class="edition">The Forsaken One</h4>
-          <p>ORDER</p>
-          <h3 class="order">08</h3>
-        </main>
-      </article>
-      <article class="profile-2">
-        <header>
-          <button class="share-button">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52.495 52.495" width="22" height="22">
-              <g fill="#2B2B2B">
-                <path d="M31.113 16.038V3.99l19.971 20.08-19.971 20.08V32.102S13.378 27.81 1.264 48.166c0 0-3.02-15.536 10.51-26.794 0-.001 6.129-5.732 19.339-5.334z"/>
-                <path d="M.783 50.929l-.5-2.573c-.031-.161-2.974-16.25 10.852-27.753.202-.191 6.116-5.585 18.674-5.585.102 0 .203 0 .305.001V1.566L52.495 24.07 30.113 46.574V32.937c-.662-.098-1.725-.213-3.071-.213-5.761 0-16.657 2.073-24.918 15.953L.783 50.929zm29.025-33.911c-11.776 0-17.297 5.033-17.352 5.084C2.911 30.046 1.878 40.274 2.004 45.149 14.365 27.091 31.127 31.077 31.348 31.13l.765.185v10.411L49.674 24.07 32.113 6.413v10.654l-1.03-.03c-.433-.013-.857-.019-1.275-.019z"/>
-              </g>
-            </svg>
-          </button>
-          <aside>
-            <small>CARDS</small>
-            <h3>02</h3>
-          </aside>
-        </header>
-        <button class="show-more">
-          <hr>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -20 129 129" width="20" height="20">
-            <path d="M121.3 34.6c-1.6-1.6-4.2-1.6-5.8 0l-51 51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8 0-1.6 1.6-1.6 4.2 0 5.8l53.9 53.9c.8.8 1.8 1.2 2.9 1.2 1 0 2.1-.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2.1-5.8z"
-              fill="#FFF" />
-          </svg>
-          <hr>
-        </button>
-        <main>
-          <h4>Forgemaster</h4>
-          <p class="date">Tuesday 05/29/18 08:00am</p>
-          <p class="url">
-            <a href="#" target="_blank">http://2.bp.blogspot.com/-iHnXQ8dOnEg/VT4HM0nvt3I/AAAAAAABY3Y/mbmAOXHzXh4/s1600/1%2B-%2BThe%2BForgemaster%2Bby%2BBrandon%2BMoore.jpg</a>
-          </p>
-          <p>EDITION</p>
-          <h4 class="edition">Creation</h4>
-          <p>ORDER</p>
-          <h3 class="order">10</h3>
-        </main>
-      </article>
-      <article class="profile-3">
-        <header>
-          <button class="share-button">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52.495 52.495" width="22" height="22">
-              <g fill="#2B2B2B">
-                <path d="M31.113 16.038V3.99l19.971 20.08-19.971 20.08V32.102S13.378 27.81 1.264 48.166c0 0-3.02-15.536 10.51-26.794 0-.001 6.129-5.732 19.339-5.334z"/>
-                <path d="M.783 50.929l-.5-2.573c-.031-.161-2.974-16.25 10.852-27.753.202-.191 6.116-5.585 18.674-5.585.102 0 .203 0 .305.001V1.566L52.495 24.07 30.113 46.574V32.937c-.662-.098-1.725-.213-3.071-.213-5.761 0-16.657 2.073-24.918 15.953L.783 50.929zm29.025-33.911c-11.776 0-17.297 5.033-17.352 5.084C2.911 30.046 1.878 40.274 2.004 45.149 14.365 27.091 31.127 31.077 31.348 31.13l.765.185v10.411L49.674 24.07 32.113 6.413v10.654l-1.03-.03c-.433-.013-.857-.019-1.275-.019z"/>
-              </g>
-            </svg>
-          </button>
-          <aside>
-            <small>CARDS</small>
-            <h3>04</h3>
-          </aside>
-        </header>
-        <button class="show-more">
-          <hr>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -20 129 129" width="20" height="20">
-            <path d="M121.3 34.6c-1.6-1.6-4.2-1.6-5.8 0l-51 51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8 0-1.6 1.6-1.6 4.2 0 5.8l53.9 53.9c.8.8 1.8 1.2 2.9 1.2 1 0 2.1-.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2.1-5.8z"
-              fill="#FFF" />
-          </svg>
-          <hr>
-        </button>
-        <main>
-          <h4>Slices n' Dices</h4>
-          <p class="date">Tuesday 05/29/18 08:00am</p>
-          <p class="url">
-            <a href="#" target="_blank">http://s3.gatheringmagic.com/uploads/2015/04/15/ML_3.jpg</a>
-          </p>
-          <p>EDITION</p>
-          <h4 class="edition">Mythril Works</h4>
-          <p>ORDER</p>
-          <h3 class="order">04</h3>
-        </main>
-      </article>
-      <article class="profile-4">
-        <header>
-          <button class="share-button">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52.495 52.495" width="22" height="22">
-              <g fill="#2B2B2B">
-                <path d="M31.113 16.038V3.99l19.971 20.08-19.971 20.08V32.102S13.378 27.81 1.264 48.166c0 0-3.02-15.536 10.51-26.794 0-.001 6.129-5.732 19.339-5.334z"/>
-                <path d="M.783 50.929l-.5-2.573c-.031-.161-2.974-16.25 10.852-27.753.202-.191 6.116-5.585 18.674-5.585.102 0 .203 0 .305.001V1.566L52.495 24.07 30.113 46.574V32.937c-.662-.098-1.725-.213-3.071-.213-5.761 0-16.657 2.073-24.918 15.953L.783 50.929zm29.025-33.911c-11.776 0-17.297 5.033-17.352 5.084C2.911 30.046 1.878 40.274 2.004 45.149 14.365 27.091 31.127 31.077 31.348 31.13l.765.185v10.411L49.674 24.07 32.113 6.413v10.654l-1.03-.03c-.433-.013-.857-.019-1.275-.019z"/>
-              </g>
-            </svg>
-          </button>
-          <aside>
-            <small>CARDS</small>
-            <h3>02</h3>
-          </aside>
-        </header>
-        <button class="show-more">
-          <hr>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -20 129 129" width="20" height="20">
-            <path d="M121.3 34.6c-1.6-1.6-4.2-1.6-5.8 0l-51 51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8 0-1.6 1.6-1.6 4.2 0 5.8l53.9 53.9c.8.8 1.8 1.2 2.9 1.2 1 0 2.1-.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2.1-5.8z"
-              fill="#FFF" />
-          </svg>
-          <hr>
-        </button>
-        <main>
-          <h4>Forest Wurm</h4>
-          <p class="date">Tuesday 05/29/18 08:00am</p>
-          <p class="url">
-            <a href="#" target="_blank">https://78.media.tumblr.com/8696531b07ec5b5fe8b58c3e4701cf4c/tumblr_ogrorv8MLU1sp8yqvo1_500.jpg</a>
-          </p>
-          <p>EDITION</p>
-          <h4 class="edition">You've Got Wurms</h4>
-          <p>ORDER</p>
-          <h3 class="order">07</h3>
-        </main>
-      </article>
-      <article class="profile-5">
-        <header>
-          <button class="share-button">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52.495 52.495" width="22" height="22">
-              <g fill="#2B2B2B">
-                <path d="M31.113 16.038V3.99l19.971 20.08-19.971 20.08V32.102S13.378 27.81 1.264 48.166c0 0-3.02-15.536 10.51-26.794 0-.001 6.129-5.732 19.339-5.334z"/>
-                <path d="M.783 50.929l-.5-2.573c-.031-.161-2.974-16.25 10.852-27.753.202-.191 6.116-5.585 18.674-5.585.102 0 .203 0 .305.001V1.566L52.495 24.07 30.113 46.574V32.937c-.662-.098-1.725-.213-3.071-.213-5.761 0-16.657 2.073-24.918 15.953L.783 50.929zm29.025-33.911c-11.776 0-17.297 5.033-17.352 5.084C2.911 30.046 1.878 40.274 2.004 45.149 14.365 27.091 31.127 31.077 31.348 31.13l.765.185v10.411L49.674 24.07 32.113 6.413v10.654l-1.03-.03c-.433-.013-.857-.019-1.275-.019z"/>
-              </g>
-            </svg>
-          </button>
-          <aside>
-            <small>CARDS</small>
-            <h3>04</h3>
-          </aside>
-        </header>
-        <button class="show-more">
-          <hr>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -20 129 129" width="20" height="20">
-            <path d="M121.3 34.6c-1.6-1.6-4.2-1.6-5.8 0l-51 51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8 0-1.6 1.6-1.6 4.2 0 5.8l53.9 53.9c.8.8 1.8 1.2 2.9 1.2 1 0 2.1-.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2.1-5.8z"
-              fill="#FFF" />
-          </svg>
-          <hr>
-        </button>
-        <main>
-          <h4>Rain of Tears</h4>
-          <p class="date">Tuesday 05/29/18 08:00am</p>
-          <p class="url">
-            <a href="#" target="_blank">https://www.hipstersofthecoast.com/wp-content/uploads/2016/12/Rain-of-tears.jpg</a>
-          </p>
-          <p>EDITION</p>
-          <h4 class="edition">Land Destruction</h4>
-          <p>ORDER</p>
-          <h3 class="order">02</h3>
-        </main>
-      </article>
-      <article class="profile-6">
-        <header>
-          <button class="share-button">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52.495 52.495" width="22" height="22">
-              <g fill="#2B2B2B">
-                <path d="M31.113 16.038V3.99l19.971 20.08-19.971 20.08V32.102S13.378 27.81 1.264 48.166c0 0-3.02-15.536 10.51-26.794 0-.001 6.129-5.732 19.339-5.334z"/>
-                <path d="M.783 50.929l-.5-2.573c-.031-.161-2.974-16.25 10.852-27.753.202-.191 6.116-5.585 18.674-5.585.102 0 .203 0 .305.001V1.566L52.495 24.07 30.113 46.574V32.937c-.662-.098-1.725-.213-3.071-.213-5.761 0-16.657 2.073-24.918 15.953L.783 50.929zm29.025-33.911c-11.776 0-17.297 5.033-17.352 5.084C2.911 30.046 1.878 40.274 2.004 45.149 14.365 27.091 31.127 31.077 31.348 31.13l.765.185v10.411L49.674 24.07 32.113 6.413v10.654l-1.03-.03c-.433-.013-.857-.019-1.275-.019z"/>
-              </g>
-            </svg>
-          </button>
-          <aside>
-            <small>CARDS</small>
-            <h3>04</h3>
-          </aside>
-        </header>
-        <button class="show-more">
-          <hr>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -20 129 129" width="20" height="20">
-            <path d="M121.3 34.6c-1.6-1.6-4.2-1.6-5.8 0l-51 51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8 0-1.6 1.6-1.6 4.2 0 5.8l53.9 53.9c.8.8 1.8 1.2 2.9 1.2 1 0 2.1-.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2.1-5.8z" fill="#FFF"/>
-          </svg>
-          <hr>
-        </button>
-        <main>
-          <h4>Sliver Queen</h4>
-          <p class="date">Tuesday 05/29/18 08:00am</p>
-          <p class="url">
-            <a href="#" target="_blank">https://i.imgur.com/bIFnMZ3.jpg</a>
-          </p>
-          <p>EDITION</p>
-          <h4 class="edition">Slivers</h4>
-          <p>ORDER</p>
-          <h3 class="order">15</h3>
-        </main>
-      </article>
-      <article class="profile-7">
-        <header>
-          <button class="share-button">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52.495 52.495" width="22" height="22">
-              <g fill="#2B2B2B">
-                <path d="M31.113 16.038V3.99l19.971 20.08-19.971 20.08V32.102S13.378 27.81 1.264 48.166c0 0-3.02-15.536 10.51-26.794 0-.001 6.129-5.732 19.339-5.334z"/>
-                <path d="M.783 50.929l-.5-2.573c-.031-.161-2.974-16.25 10.852-27.753.202-.191 6.116-5.585 18.674-5.585.102 0 .203 0 .305.001V1.566L52.495 24.07 30.113 46.574V32.937c-.662-.098-1.725-.213-3.071-.213-5.761 0-16.657 2.073-24.918 15.953L.783 50.929zm29.025-33.911c-11.776 0-17.297 5.033-17.352 5.084C2.911 30.046 1.878 40.274 2.004 45.149 14.365 27.091 31.127 31.077 31.348 31.13l.765.185v10.411L49.674 24.07 32.113 6.413v10.654l-1.03-.03c-.433-.013-.857-.019-1.275-.019z"/>
-              </g>
-            </svg>
-          </button>
-          <aside>
-            <small>CARDS</small>
-            <h3>04</h3>
-          </aside>
-        </header>
-        <button class="show-more">
-          <hr>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -20 129 129" width="20" height="20">
-            <path d="M121.3 34.6c-1.6-1.6-4.2-1.6-5.8 0l-51 51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8 0-1.6 1.6-1.6 4.2 0 5.8l53.9 53.9c.8.8 1.8 1.2 2.9 1.2 1 0 2.1-.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2.1-5.8z"
-              fill="#FFF" />
-          </svg>
-          <hr>
-        </button>
-        <main>
-          <h4>Angel Incarnate</h4>
-          <p class="date">Tuesday 05/29/18 08:00am</p>
-          <p class="url">
-            <a href="#" target="_blank">https://orig00.deviantart.net/cc6a/f/2011/173/1/d/1de682dd65d7b77a33419b3551e7cad3-d3joa7a.jpg</a>
-          </p>
-          <p>EDITION</p>
-          <h4 class="edition">Archangels</h4>
-          <p>ORDER</p>
-          <h3 class="order">25</h3>
-        </main>
-      </article>
-      <article class="profile-8">
-        <header>
-          <button class="share-button">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52.495 52.495" width="22" height="22">
-              <g fill="#2B2B2B">
-                <path d="M31.113 16.038V3.99l19.971 20.08-19.971 20.08V32.102S13.378 27.81 1.264 48.166c0 0-3.02-15.536 10.51-26.794 0-.001 6.129-5.732 19.339-5.334z"/>
-                <path d="M.783 50.929l-.5-2.573c-.031-.161-2.974-16.25 10.852-27.753.202-.191 6.116-5.585 18.674-5.585.102 0 .203 0 .305.001V1.566L52.495 24.07 30.113 46.574V32.937c-.662-.098-1.725-.213-3.071-.213-5.761 0-16.657 2.073-24.918 15.953L.783 50.929zm29.025-33.911c-11.776 0-17.297 5.033-17.352 5.084C2.911 30.046 1.878 40.274 2.004 45.149 14.365 27.091 31.127 31.077 31.348 31.13l.765.185v10.411L49.674 24.07 32.113 6.413v10.654l-1.03-.03c-.433-.013-.857-.019-1.275-.019z"/>
-              </g>
-            </svg>
-          </button>
-          <aside>
-            <small>CARDS</small>
-            <h3>04</h3>
-          </aside>
-        </header>
-        <button class="show-more">
-          <hr>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -20 129 129" width="20" height="20">
-            <path d="M121.3 34.6c-1.6-1.6-4.2-1.6-5.8 0l-51 51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8 0-1.6 1.6-1.6 4.2 0 5.8l53.9 53.9c.8.8 1.8 1.2 2.9 1.2 1 0 2.1-.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2.1-5.8z"
-              fill="#FFF" />
-          </svg>
-          <hr>
-        </button>
-        <main>
-          <h4>Trippy Owl</h4>
-          <p class="date">Tuesday 05/29/18 08:00am</p>
-          <p class="url">
-            <a href="#" target="_blank">https://cdn.shopify.com/s/files/1/1601/3103/files/Baleful_Strix_Playmat_-_Featured_1600x.jpg?v=1517034592</a>
-          </p>
-          <p>EDITION</p>
-          <h4 class="edition">Hoot</h4>
-          <p>ORDER</p>
-          <h3 class="order">01</h3>
-        </main>
-      </article>
-      <article class="profile-9">
-        <header>
-          <button class="share-button">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52.495 52.495" width="22" height="22">
-              <g fill="#2B2B2B">
-                <path d="M31.113 16.038V3.99l19.971 20.08-19.971 20.08V32.102S13.378 27.81 1.264 48.166c0 0-3.02-15.536 10.51-26.794 0-.001 6.129-5.732 19.339-5.334z"/>
-                <path d="M.783 50.929l-.5-2.573c-.031-.161-2.974-16.25 10.852-27.753.202-.191 6.116-5.585 18.674-5.585.102 0 .203 0 .305.001V1.566L52.495 24.07 30.113 46.574V32.937c-.662-.098-1.725-.213-3.071-.213-5.761 0-16.657 2.073-24.918 15.953L.783 50.929zm29.025-33.911c-11.776 0-17.297 5.033-17.352 5.084C2.911 30.046 1.878 40.274 2.004 45.149 14.365 27.091 31.127 31.077 31.348 31.13l.765.185v10.411L49.674 24.07 32.113 6.413v10.654l-1.03-.03c-.433-.013-.857-.019-1.275-.019z"/>
-              </g>
-            </svg>
-          </button>
-          <aside>
-            <small>CARDS</small>
-            <h3>02</h3>
-          </aside>
-        </header>
-        <button class="show-more">
-          <hr>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -20 129 129" width="20" height="20">
-            <path d="M121.3 34.6c-1.6-1.6-4.2-1.6-5.8 0l-51 51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8 0-1.6 1.6-1.6 4.2 0 5.8l53.9 53.9c.8.8 1.8 1.2 2.9 1.2 1 0 2.1-.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2.1-5.8z"
-              fill="#FFF" />
-          </svg>
-          <hr>
-        </button>
-        <main>
-          <h4>Leviathan</h4>
-          <p class="date">Tuesday 05/29/18 08:00am</p>
-          <p class="url">
-            <a href="#" target="_blank">http://2win.2winstage.com/p/recipients_namehere</a>
-          </p>
-          <p>EDITION</p>
-          <h4 class="edition">Wurmys</h4>
-          <p>ORDER</p>
-          <h3 class="order">08</h3>
-        </main>
-      </article>
-      <article class="profile-10">
-        <header>
-          <button class="share-button">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52.495 52.495" width="22" height="22">
-              <g fill="#2B2B2B">
-                <path d="M31.113 16.038V3.99l19.971 20.08-19.971 20.08V32.102S13.378 27.81 1.264 48.166c0 0-3.02-15.536 10.51-26.794 0-.001 6.129-5.732 19.339-5.334z"/>
-                <path d="M.783 50.929l-.5-2.573c-.031-.161-2.974-16.25 10.852-27.753.202-.191 6.116-5.585 18.674-5.585.102 0 .203 0 .305.001V1.566L52.495 24.07 30.113 46.574V32.937c-.662-.098-1.725-.213-3.071-.213-5.761 0-16.657 2.073-24.918 15.953L.783 50.929zm29.025-33.911c-11.776 0-17.297 5.033-17.352 5.084C2.911 30.046 1.878 40.274 2.004 45.149 14.365 27.091 31.127 31.077 31.348 31.13l.765.185v10.411L49.674 24.07 32.113 6.413v10.654l-1.03-.03c-.433-.013-.857-.019-1.275-.019z"/>
-              </g>
-            </svg>
-          </button>
-          <aside>
-            <small>CARDS</small>
-            <h3>03</h3>
-          </aside>
-        </header>
-        <button class="show-more">
-          <hr>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -20 129 129" width="20" height="20">
-            <path d="M121.3 34.6c-1.6-1.6-4.2-1.6-5.8 0l-51 51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8 0-1.6 1.6-1.6 4.2 0 5.8l53.9 53.9c.8.8 1.8 1.2 2.9 1.2 1 0 2.1-.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2.1-5.8z"
-              fill="#FFF" />
-          </svg>
-          <hr>
-        </button>
-        <main>
-          <h4>Kitty</h4>
-          <p class="date">Tuesday 05/29/18 08:00am</p>
-          <p class="url">
-            <a href="#" target="_blank">https://mcecentral.com/wp-content/uploads/2017/11/magic48.jpg</a>
-          </p>
-          <p>EDITION</p>
-          <h4 class="edition">Purrfect</h4>
-          <p>ORDER</p>
-          <h3 class="order">11</h3>
-        </main>
-      </article>
-      <article class="profile-11">
-        <header>
-          <button class="share-button">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52.495 52.495" width="22" height="22">
-              <g fill="#2B2B2B">
-                <path d="M31.113 16.038V3.99l19.971 20.08-19.971 20.08V32.102S13.378 27.81 1.264 48.166c0 0-3.02-15.536 10.51-26.794 0-.001 6.129-5.732 19.339-5.334z"/>
-                <path d="M.783 50.929l-.5-2.573c-.031-.161-2.974-16.25 10.852-27.753.202-.191 6.116-5.585 18.674-5.585.102 0 .203 0 .305.001V1.566L52.495 24.07 30.113 46.574V32.937c-.662-.098-1.725-.213-3.071-.213-5.761 0-16.657 2.073-24.918 15.953L.783 50.929zm29.025-33.911c-11.776 0-17.297 5.033-17.352 5.084C2.911 30.046 1.878 40.274 2.004 45.149 14.365 27.091 31.127 31.077 31.348 31.13l.765.185v10.411L49.674 24.07 32.113 6.413v10.654l-1.03-.03c-.433-.013-.857-.019-1.275-.019z"/>
-              </g>
-            </svg>
-          </button>
-          <aside>
-            <small>CARDS</small>
-            <h3>04</h3>
-          </aside>
-        </header>
-        <button class="show-more">
-          <hr>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -20 129 129" width="20" height="20">
-            <path d="M121.3 34.6c-1.6-1.6-4.2-1.6-5.8 0l-51 51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8 0-1.6 1.6-1.6 4.2 0 5.8l53.9 53.9c.8.8 1.8 1.2 2.9 1.2 1 0 2.1-.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2.1-5.8z"
-              fill="#FFF" />
-          </svg>
-          <hr>
-        </button>
-        <main>
-          <h4>Nicol Bolas</h4>
-          <p class="date">Tuesday 05/29/18 08:00am</p>
-          <p class="url">
-            <a href="#" target="_blank">https://orig00.deviantart.net/f611/f/2013/145/4/2/nicol_bolas_by_a_gl-d66ii59.png</a>
-          </p>
-          <p>EDITION</p>
-          <h4 class="edition">Defeat</h4>
-          <p>ORDER</p>
-          <h3 class="order">06</h3>
-        </main>
-      </article>
-      <article class="profile-12">
-        <header>
-          <button class="share-button">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52.495 52.495" width="22" height="22">
-              <g fill="#2B2B2B">
-                <path d="M31.113 16.038V3.99l19.971 20.08-19.971 20.08V32.102S13.378 27.81 1.264 48.166c0 0-3.02-15.536 10.51-26.794 0-.001 6.129-5.732 19.339-5.334z"/>
-                <path d="M.783 50.929l-.5-2.573c-.031-.161-2.974-16.25 10.852-27.753.202-.191 6.116-5.585 18.674-5.585.102 0 .203 0 .305.001V1.566L52.495 24.07 30.113 46.574V32.937c-.662-.098-1.725-.213-3.071-.213-5.761 0-16.657 2.073-24.918 15.953L.783 50.929zm29.025-33.911c-11.776 0-17.297 5.033-17.352 5.084C2.911 30.046 1.878 40.274 2.004 45.149 14.365 27.091 31.127 31.077 31.348 31.13l.765.185v10.411L49.674 24.07 32.113 6.413v10.654l-1.03-.03c-.433-.013-.857-.019-1.275-.019z"/>
-              </g>
-            </svg>
-          </button>
-          <aside>
-            <small>CARDS</small>
-            <h3>02</h3>
-          </aside>
-        </header>
-        <button class="show-more">
-          <hr>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -20 129 129" width="20" height="20">
-            <path d="M121.3 34.6c-1.6-1.6-4.2-1.6-5.8 0l-51 51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8 0-1.6 1.6-1.6 4.2 0 5.8l53.9 53.9c.8.8 1.8 1.2 2.9 1.2 1 0 2.1-.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2.1-5.8z"
-              fill="#FFF" />
-          </svg>
-          <hr>
-        </button>
-        <main>
-          <h4>Recipient's Namehere</h4>
-          <p class="date">Tuesday 05/29/18 08:00am</p>
-          <p class="url">
-            <a href="#" target="_blank">http://img.gawkerassets.com/img/18bluok3iy2tujpg/original.jpg</a>
-          </p>
-          <p>EDITION</p>
-          <h4 class="edition">You Win!</h4>
-          <p>ORDER</p>
-          <h3 class="order">99</h3>
-        </main>
-      </article>
-      <button class="section-show-more">
-        <hr>
-        <div>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" width="15" height="15">
-            <path d="M121.3 34.6c-1.6-1.6-4.2-1.6-5.8 0l-51 51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8 0-1.6 1.6-1.6 4.2 0 5.8l53.9 53.9c.8.8 1.8 1.2 2.9 1.2 1 0 2.1-.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2.1-5.8z" data-original="#000000"/>
-          </svg>  
-        </div>      
-        <hr>
-      </button>
-    </section>
-  </container>
-</body>
+      </section>
+    </container>
+  </body>
 </html>
