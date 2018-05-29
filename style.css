@@ -3,18 +3,26 @@
 body {
   background: #EFEFEF url(images/soft-wallpaper.png) 0 0 repeat;
   font-family: 'Open Sans', sans-serif;
-  margin: 0;
 }
 
 .wrapper {
-  background-color: #2B2B2B;
-  margin: 0;
   width: 100vw;
 }
 
 button:focus {
   outline: 2px solid #55B4F8;
   outline-offset: 5px
+}
+
+.more-btn {
+  align-items: center;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
 }
 
 hr {
@@ -43,8 +51,8 @@ hr {
   cursor: pointer;
   display: flex;
   justify-content: center;
-  margin: 1em 1em 0 0;
   order: 0;
+  margin: 1em 1em 0 0;
   width: 100%;
 }
 
@@ -54,7 +62,6 @@ hr {
   box-sizing: content-box;
   border-radius: 50%;
   padding: 0.3em;
-  outline: 1;
   height: 1em;
   width: 1em;
 }
@@ -79,11 +86,11 @@ hr {
 .header-nav {
   cursor: pointer;
   display: flex;
-  height: auto;
   justify-content: space-around;
-  margin: 1em 0;
   order: 5;
   padding: 0 0.3em;
+  margin: 1em 0;
+  height: auto;
   width: 100%;
   transition: all 0.15s linear;
 }
@@ -101,8 +108,8 @@ hr {
 }
 
 .header-nav svg {
-  width: 20px;
   height: 20px;
+  width: 20px;
 }
 
 .header-link:hover{
@@ -124,20 +131,20 @@ hr {
   font-weight: 400;
   font-size: 3em;
   justify-content: flex-start;
-  margin: 0.3em auto 0.05em auto;
   order: 0;
+  margin: 0.3em auto 0.05em auto;
   transition: all 0.15s linear;
 }
 
 .logo a {
-  text-decoration: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
+  text-decoration: none;
 }
 
 .logo img {
-  width: 4.6em;
   padding: 0;
+  width: 4.6em;
 }
 
 /* Collectibles Section Header */
@@ -156,23 +163,17 @@ section {
   flex-flow: row wrap;
   justify-content: center;
   padding: 0 0 0.6em 0;
-  transition: all .15s linear;
   width: 100%;
+  transition: all .15s linear;
 }
 
+/* Section's Show More Button at Bottom of Page */
+
 section .section-show-more {
-  align-items: center;
-  background-color: transparent;
-  border: 0;
-  cursor: pointer;
-  display: flex;
-  filter: opacity(50%);
-  flex-direction: row;
-  padding: 1em;
-  justify-content: center;
   fill: #2B2B2B;
+  filter: opacity(50%);
   stroke: #2b2b2b;
-  text-align: center;
+  padding: 1em;
   width: 95vw;
 }
 
@@ -195,23 +196,23 @@ article {
   background-color: #fff;
   box-shadow: 0px 0px 8px #fff;
   flex: 1;
-  height: auto;
-  margin: 0.04em 0;
-  min-width: 100%;
   position: relative;
+  margin: 0.04em 0;
+  height: auto;
+  min-width: 100%;
   width: 100%;
 }
 
 /* Card Header / background container */
 
 article header {
-  display: flex;
   background-blend-mode: overlay;
+  display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  min-height: 10em;
   padding: 1em 1em 5em 1em;
   position: relative;
+  min-height: 10em;
   width: 100%;
 }
 
@@ -222,8 +223,8 @@ article .share-button {
   border-radius: 50%;
   color: #4D4D4D;
   cursor: pointer;
-  width: 3em;
   height: 3em;
+  width: 3em;
 }
 
 article .share-button:hover {
@@ -270,10 +271,10 @@ h4 {
 
 .url {
   background: #ddd url(images/light-paper-fibers.png) 0 0 repeat;
-  margin: 0.8em 0;
-  height: 3.6em;
   overflow: hidden;
+  margin: 0.8em 0;
   padding: 0.4em 2.3em 1em 0.6em;
+  height: 3.6em;
 }
 
 .url a {
@@ -302,19 +303,11 @@ h4 {
 /* Card Footer Show More Button */
 
 article .show-more {
-  align-items: center;
-  background-color: transparent;
-  border: 0;
   color: white;
-  cursor: pointer;
-  display: flex;
-  flex-direction: row;
-  height: auto;
-  justify-content: center;
   padding-top: 8em;
   position: absolute;
-  text-align: center;
   top: 0;
+  height: auto;
   width: 100%;
   z-index: 1;
 }
