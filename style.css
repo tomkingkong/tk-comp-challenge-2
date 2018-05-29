@@ -3,10 +3,12 @@
 body {
   background: #EFEFEF url(images/soft-wallpaper.png) 0 0 repeat;
   font-family: 'Open Sans', sans-serif;
+  margin: 0;
 }
 
 .wrapper {
   background-color: #2B2B2B;
+  margin: 0;
   width: 100vw;
 }
 
@@ -93,8 +95,13 @@ hr {
 }
 
 .header-nav svg {
-  width: 10%;
-  height: 10%;
+  width: 20px;
+  height: 20px;
+}
+
+.header-link:hover{
+  fill: #fff;
+  stroke: #fff;
 }
 
 .header-nav p:last-of-type {
