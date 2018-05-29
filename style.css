@@ -68,7 +68,7 @@ hr {
   fill: #EFEFEF;
 }
 
-/* Shares / Playlists / Personal  */
+/* Shares / Decks / Personal  */
 
 .header-nav {
   cursor: pointer;
@@ -203,6 +203,7 @@ article header {
   background-blend-mode: overlay;
   flex-flow: row wrap;
   justify-content: space-between;
+  min-height: 10em;
   padding: 1em 1em 5em 1em;
   position: relative;
   width: 100%;
@@ -263,9 +264,10 @@ h4 {
 
 .url {
   background: #ddd url(images/light-paper-fibers.png) 0 0 repeat;
-  overflow-y: scroll;
-  padding: 0.4em 2.3em 1em 0.6em;
   margin: 0.8em 0;
+  height: 3.6em;
+  overflow: hidden;
+  padding: 0.4em 2.3em 1em 0.6em;
 }
 
 .url a {
@@ -277,15 +279,15 @@ h4 {
   text-decoration: none;
 }
 
-/* Card Content Playlist */
+/* Card Content Edition */
 
-.playlist {
+.edition {
   margin-bottom: 1em;
 }
 
-/* Card Content Attachments */
+/* Card Content Order */
 
-.attachments {
+.order {
   color: #55B4F8;
   font-size: 2.5em;
   padding: 0 0 0.4em 0;
@@ -343,7 +345,7 @@ article .show-more:hover {
 }
 
 .profile-4 header {
-  background: #666 url(https://78.media.tumblr.com/8696531b07ec5b5fe8b58c3e4701cf4c/tumblr_ogrorv8MLU1sp8yqvo1_500.jpg) no-repeat center/100%;
+  background: #666 url(https://78.media.tumblr.com/8696531b07ec5b5fe8b58c3e4701cf4c/tumblr_ogrorv8MLU1sp8yqvo1_500.jpg) no-repeat center top/100%;
 }
 
 .profile-5 header {
@@ -351,31 +353,31 @@ article .show-more:hover {
 }
 
 .profile-6 header {
-  background: #666 url(https://i.imgur.com/bIFnMZ3.jpg) no-repeat center/100%;
+  background: #666 url(https://i.imgur.com/bIFnMZ3.jpg) no-repeat center top/100%;
 }
 
 .profile-7 header {
-  background: #666 url(https://nerdist.com/wp-content/uploads/2015/12/ZendikarArt_FEAT.png) no-repeat center/100%;
+  background: #666 url(https://orig00.deviantart.net/cc6a/f/2011/173/1/d/1de682dd65d7b77a33419b3551e7cad3-d3joa7a.jpg) no-repeat center top/100%;
 }
 
 .profile-8 header {
-  background: #666 url(https://nerdist.com/wp-content/uploads/2015/12/ZendikarArt_FEAT.png) no-repeat center/100%;
+  background: #666 url(https://cdn.shopify.com/s/files/1/1601/3103/files/Baleful_Strix_Playmat_-_Featured_1600x.jpg?v=1517034592) no-repeat center/100%;
 }
 
 .profile-9 header {
-  background: #666 url(https://nerdist.com/wp-content/uploads/2015/12/ZendikarArt_FEAT.png) no-repeat center/100%;
+  background: #666 url(http://static1.1.sqspcdn.com/static/p/609000/5730545/1276599835293/progenitus.jpg?token=U%2BQbUg%2B1JlFUczwPXGM5vpQRuzE%3D) no-repeat center top/100%;
 }
 
 .profile-10 header {
-  background: #666 url(https://nerdist.com/wp-content/uploads/2015/12/ZendikarArt_FEAT.png) no-repeat center/100%;
+  background: #666 url(https://mcecentral.com/wp-content/uploads/2017/11/magic48.jpg) no-repeat center top/100%;
 }
 
 .profile-11 header {
-  background: #666 url(https://nerdist.com/wp-content/uploads/2015/12/ZendikarArt_FEAT.png) no-repeat center/100%;
+  background: #666 url(https://orig00.deviantart.net/f611/f/2013/145/4/2/nicol_bolas_by_a_gl-d66ii59.png) no-repeat center/100%;
 }
 
 .profile-12 header {
-  background: #666 url(https://nerdist.com/wp-content/uploads/2015/12/ZendikarArt_FEAT.png) no-repeat center/100%;
+  background: #666 url(http://img.gawkerassets.com/img/18bluok3iy2tujpg/original.jpg) no-repeat center top/100%;
 }
 
 article:hover header {
@@ -456,7 +458,7 @@ article:hover header {
   }
 }
 
-@media only screen and (min-width: 602px) {
+@media only screen and (min-width: 628px) {
   .profile-4,
   .profile-3 {
     display: block;
@@ -503,7 +505,7 @@ article:hover header {
   }
 }
 
-@media only screen and (min-width: 891px) {
+@media only screen and (min-width: 928px) {
   .header-nav p {
     margin: 0 5em 0 1em;
   }
@@ -513,21 +515,21 @@ article:hover header {
   }
 }
 
-@media only screen and (min-width: 1191px) {
+@media only screen and (min-width: 1229px) {
   .profile-8,
   .profile-7 {
     display: block;
   }
 }
 
-@media only screen and (min-width: 1502px) {
+@media only screen and (min-width: 1530px) {
   .profile-9,
   .profile-10 {
     display: block;
   }
 }
 
-@media only screen and (min-width: 1805px) {
+@media only screen and (min-width: 1831px) {
   .profile-11,
   .profile-12 {
     display: block;
