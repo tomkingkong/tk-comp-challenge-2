@@ -5,7 +5,7 @@
 ![alt text](https://raw.githubusercontent.com/tomkingkong/tk-comp-challenge-2/master/images/static-two-original-comp.png)
 
 ## Magic The Gathering theme
-### https://tomkingkong.github.io/tk-comp-challenge-2/
+### [Demo](https://tomkingkong.github.io/tk-comp-challenge-2/)
 ### Here are a few various states
 
 ### Desktop
