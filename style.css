@@ -10,7 +10,6 @@ body {
 }
 
 button:focus {
-  outline: 2px solid #55B4F8;
   outline-offset: 5px
 }
 
@@ -194,6 +193,7 @@ section .section-show-more {
 
 article {
   background-color: #fff;
+  border-radius: 1rem;
   box-shadow: 0px 0px 8px #fff;
   flex: 1;
   position: relative;
