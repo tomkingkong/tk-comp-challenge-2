@@ -6,7 +6,7 @@
 ### https://tomkingkong.github.io/tk-comp-challenge-2/
 ### Here are a few various states
 
-### Screenshot ~1200px Screen
+### Desktop
 ![large-screen](https://raw.githubusercontent.com/tomkingkong/tk-comp-challenge-2/master/images/gifs/static-two-big.gif)
 
 ### Responsive
