@@ -4,16 +4,13 @@
 
 ## Magic The Gathering theme
 ### https://tomkingkong.github.io/tk-comp-challenge-2/
-### Here are a few screenshots in various states
+### Here are a few various states
 
 ### Screenshot ~1200px Screen
-![alt text](https://raw.githubusercontent.com/tomkingkong/tk-comp-challenge-2/master/images/static-two-large.png)
+![large-screen](https://raw.githubusercontent.com/tomkingkong/tk-comp-challenge-2/master/images/gifs/static-two-big.gif)
 
-### Screenshot ~800px Screen
-![alt text](https://raw.githubusercontent.com/tomkingkong/tk-comp-challenge-2/master/images/static-two-medium.png)
+### Responsive
 
-### Screenshot ~600px Screen
-![alt text](https://raw.githubusercontent.com/tomkingkong/tk-comp-challenge-2/master/images/static-two-semi-mobile.png)
+![responsive](https://raw.githubusercontent.com/tomkingkong/tk-comp-challenge-2/master/images/gifs/static-two-responsive.gif)
 
-### Screenshot ~320px Screen
-![alt text](https://raw.githubusercontent.com/tomkingkong/tk-comp-challenge-2/master/images/static-two-mobile.png)
+
